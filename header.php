@@ -9,8 +9,11 @@
 
 <body>
     <header>
-        <h1><?php bloginfo('name'); ?></h1>
-        <div class="menu-container">
-            <?php wp_nav_menu(array('menu' => 'primary_menu')); ?>
-        </div>
+        <nav>
+            <a href="">NOS BIÈRES</a>
+            <a href="">FABRICATION</a>
+            <img src="./src/logo.svg" alt="Logo brasserie mauriennaise du Grand Pic">
+            <a href="">PROFESSIONEL</a>
+            <a href="">À PROPOS</a>
+        </nav>
     </header>

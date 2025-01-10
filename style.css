@@ -2,3 +2,10 @@
 Theme Name: Grand Pic
 Version: 1.0
  */
+
+header {
+    width: -webkit-fill-availble;
+    height: 100px;
+    display: ;
+    nav {}
+}
