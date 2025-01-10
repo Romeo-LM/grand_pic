@@ -10,10 +10,14 @@
 <body>
     <header>
         <nav>
-            <a href="">NOS BIÈRES</a>
-            <a href="">FABRICATION</a>
-            <img src="./src/logo.svg" alt="Logo brasserie mauriennaise du Grand Pic">
-            <a href="">PROFESSIONEL</a>
-            <a href="">À PROPOS</a>
+            <div>
+                <a href="">NOS BIÈRES</a>
+                <a href="">FABRICATION</a>
+            </div>
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/logo.svg'); ?>" alt="Logo brasserie mauriennaise du Grand Pip">
+            <div>
+                <a href="">PROFESSIONEL</a>
+                <a href="">À PROPOS</a>
+            </div>
         </nav>
     </header>
