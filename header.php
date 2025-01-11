@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
@@ -14,7 +14,9 @@
                 <a href="">NOS BIÈRES</a>
                 <a href="">FABRICATION</a>
             </div>
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/logo.svg'); ?>" alt="Logo brasserie mauriennaise du Grand Pip">
+            <a href="/">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/logo.svg'); ?>" alt="Logo brasserie mauriennaise du Grand Pip">
+            </a>
             <div>
                 <a href="">PROFESSIONEL</a>
                 <a href="">À PROPOS</a>

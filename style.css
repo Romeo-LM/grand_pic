@@ -1,13 +1,23 @@
 /* 
 Theme Name: Grand Pic
 Version: 1.0
- */
+*/
+
+@font-face {
+    font-family: EDO;
+    src: url(./src/fonts/edo_sz/edosz.ttf);
+}
+
+h1,h2,h3,h4,h5,h6,h7,p,a {
+    font-family: 'Switzer-Variable';
+}
 
 header {
+    background-color: #fff;
     width: -webkit-fill-available;
     height: fit-content;
     padding: 16px 0;
-    border-radius: 0px 24px;
+    border-radius: 0px 0px 24px 24px;
     border-bottom: solid 1px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
@@ -32,7 +42,6 @@ header {
                 display: flex;
                 justify-content: center;
                 color: #000;
-                font-family: 'Switzer-Variable';
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 20px;
@@ -65,4 +74,37 @@ header {
 
 
 
+}
+
+main.newBiere {
+
+    section.hero {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        h1 {
+            color: #fff;
+            font-family: EDO;
+            text-align: center;
+            position: absolute;
+            font-size: 195px;
+        }
+    }
+
+    section.description {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 64px 0;
+
+        h2 {
+            font-weight: 700;
+            font-size: 50px;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+    }
 }
