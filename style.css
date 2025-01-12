@@ -8,7 +8,15 @@ Version: 1.0
     src: url(./src/fonts/edo_sz/edosz.ttf);
 }
 
-h1,h2,h3,h4,h5,h6,h7,p,a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+p,
+a {
     font-family: 'Switzer-Variable';
 }
 
@@ -63,7 +71,7 @@ header {
                 }
 
                 &:hover {
-                    &::before{
+                    &::before {
                         opacity: 1;
                         transform: scaleX(150);
                     }
@@ -95,9 +103,11 @@ main.newBiere {
     }
 
     section.description {
-        height: 100vh;
+        height: calc(100vh - 128px);
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
         padding: 64px 0;
 
         h2 {
@@ -105,6 +115,82 @@ main.newBiere {
             font-size: 50px;
             color: var(--secondary);
             text-transform: uppercase;
+        }
+
+        div.beerPicto {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 400px;
+            }
+
+            div.composant {
+                --width: 0px;
+                max-width: 33vw;
+                height: 80px;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                height: fit-content;
+                gap: 24px;
+
+                div.line {
+                    height: 1px;
+                    width: 144px;
+                    min-width: 80px;
+                    background-color: #fff;
+                }
+
+                div.picto {
+
+                    img {
+                        height: 80px;
+                        width: auto;
+                    }
+                }
+
+                div.text {
+                    height: 124px;
+                    min-width: 320px;
+
+                    h3 {
+                        color: var(--secondary);
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        color: #fff;
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            div.composant1 {
+                top: 0;
+                left: calc(124px + var(--width) / 2);
+            }
+
+            div.composant2 {
+                flex-direction: row-reverse;
+                top: 88px;
+                right: calc(124px + var(--width) / 2);
+            }
+
+            div.composant3 {
+                bottom: 88px;
+                left: calc(124px + var(--width) / 2);
+            }
+
+            div.composant4 {
+                flex-direction: row-reverse;
+                bottom: 0;
+                right: calc(124px + var(--width) / 2);
+            }
         }
     }
 }

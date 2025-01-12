@@ -4,6 +4,7 @@ Template Name: Nouvelle Biere
 */
 $primary = get_field('p_beer_color');
 $secondary = get_field('s_beer_color');
+$nbPicto = 4; //a modifier également dans le JS
 
 get_header();
 ?>
@@ -28,6 +29,27 @@ get_header();
     <section class="description">
 
         <h2>du bon, du bio</h2>
+
+        <div class="beerPicto">
+            <img src="<?php echo esc_url(get_field('beer_img')); ?>" alt="<?= "bière" . the_title(); ?>">
+
+            <?php
+                for ($i=0; $i < $nbPicto; $i++) { 
+                    ?>
+                        <div class="composant <?= "composant" . $i +1 ?>">
+                            <div class="line"></div>
+                            <div class="picto">
+                                <img src="<?php echo esc_url(get_field('picto_' . $i +1 . '_img')); ?>" alt="pictogramme d'un composant de la bière">
+                            </div>
+                            <div class="text">
+                                <h3><?php echo esc_textarea(get_field('picto_' .$i +1 . '_title')) ?></h3>
+                                <p><?php echo esc_textarea(get_field('picto_' .$i +1 . '_text')) ?></p>
+                            </div>
+                        </div>
+                    <?php
+                }
+            ?>
+        </div>
 
     </section>
 </main>
