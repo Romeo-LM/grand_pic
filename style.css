@@ -120,6 +120,7 @@ main.newBiere {
         div.beerPicto {
             position: relative;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
 
@@ -172,25 +173,61 @@ main.newBiere {
 
             div.composant1 {
                 top: 0;
-                left: calc(124px + var(--width) / 2);
+                left: calc(50% + 64px + var(--width) / 2);
             }
 
             div.composant2 {
                 flex-direction: row-reverse;
                 top: 88px;
-                right: calc(124px + var(--width) / 2);
+                right: calc(50% + 64px + var(--width) / 2);
             }
 
             div.composant3 {
-                bottom: 88px;
-                left: calc(124px + var(--width) / 2);
+                top: 164px;
+                left: calc(50% + 64px + var(--width) / 2);
             }
 
             div.composant4 {
                 flex-direction: row-reverse;
-                bottom: 0;
-                right: calc(124px + var(--width) / 2);
+                top: 276px;
+                right: calc(50% + 64px + var(--width) / 2);
+            }
+
+        }
+
+        div.moreIngredient {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            max-width: 640px;
+
+            div.title {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                img {
+                    height: 28px;
+                }
+
+                h3 {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    color: var(--secondary);
+                }
+
+            }
+
+            p {
+                color: #fff;
+                text-align: center;
             }
         }
+    }
+
+    section.emblem {
+        
     }
 }
