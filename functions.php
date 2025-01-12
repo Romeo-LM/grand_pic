@@ -9,8 +9,10 @@ add_action('wp_enqueue_scripts', 'add_style');
 
 function add_script()
 {
+    wp_enqueue_script('header-js', get_template_directory_uri() . '/scr/js/main-header.js', array(), false, true);
+
     if (is_page('Nouvelle Biere')) {
-        wp_enqueue_script('main-js', get_template_directory_uri() . '/scr/js/main-new-beer.js', array(), false, true);
+        wp_enqueue_script('new_beer-js', get_template_directory_uri() . '/scr/js/main-new-beer.js', array(), false, true);
     }
 }
 add_action('wp_enqueue_scripts', 'add_script');
