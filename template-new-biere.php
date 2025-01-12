@@ -67,6 +67,34 @@ get_header();
         ?>
 
     </section>
+
+    <section class="emblem">
+
+    <div class="title">
+        <h2><?php echo esc_textarea(get_field('emblem_name')) ?></h2>
+        <p><?php echo esc_textarea(get_field('emblem_name')) ?></p>
+    </div>
+
+        <div class="content">
+            <img src="<?php echo esc_url(get_field('emblem_img')); ?>" alt="image de l'animal emblème">
+            <div class="text">
+                <div class="who paragraph">
+                    <h3>qui est-il ?</h3>
+                    <p><?php echo wp_kses_post(get_field('who')) ?></p>
+                </div>
+                <div class="line"></div>
+                <div class="moreAbout paragraph">
+                    <h3>mais c'est aussi ...</h3>
+                    <p><?php echo wp_kses_post(get_field('more_about')) ?></p>
+                </div>
+                <div class="line"></div>
+                <div class="moreAbout paragraph">
+                    <h3>en lauzière</h3>
+                    <p><?php echo wp_kses_post(get_field('history')) ?></p>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php
