@@ -11,7 +11,7 @@
     <header>
         <nav>
             <div>
-                <a href="">NOS BIÈRES</a>
+                <a href="/nos-bieres">NOS BIÈRES</a>
                 <a href="">FABRICATION</a>
             </div>
             <a href="/">
