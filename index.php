@@ -1,6 +1,8 @@
 <?php
 
 $nbHero = 3; //a modifier également dans le JS
+$button = ["les classiques", "les éphémères", "les personnalisées"];
+$beer = ["247", "temp", "perso"];
 
 get_header();
 ?>
@@ -79,15 +81,26 @@ get_header();
     </section>
 
     <section class="gammes">
-        <button type="button">
-            <h3>les classiques</h3>
-        </button>
-        <button type="button">
-            <h3>les éphémères</h3>
-        </button>
-        <button type="button">
-            <h3>les personnalisées</h3>
-        </button>
+        <?php
+        $j = 0;
+        foreach ($button as $title) {
+        ?>
+            <button type="button">
+                <h3><?= $title ?></h3>
+                <div class="beerAnim">
+                    <?php
+                    for ($i = 0; $i < 5; $i++) {
+                    ?>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/beer_' . $beer[$j] . $i + 1 . '.png'); ?>" alt="" class="<?= "beerAnim" . $i + 1 ?>">
+                    <?php
+                    }
+                    ?>
+                </div>
+            </button>
+        <?php
+            $j++;
+        }
+        ?>
     </section>
 
 </main>
