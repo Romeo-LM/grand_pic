@@ -25,6 +25,58 @@ a {
     font-family: 'Switzer-Variable';
 }
 
+a.button {
+    overflow: hidden;
+    z-index: 0;
+    transition: all 300ms;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #fff;
+
+    div.ellipse {
+        transition: all 300ms;
+        height: 1px;
+        width: 1px;
+        opacity: 0;
+        position: absolute;
+        z-index: 3;
+        background-color: rgba(244, 244, 244, 0.5);
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+}
+
+a.button:hover {
+    color: #fff;
+
+    div.ellipse {
+        opacity: 1;
+        transform: scale(300);
+        z-index: 3;
+        background-color: #000;
+    }
+
+    p {
+        position: absolute;
+        z-index: 3;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
 header {
     background-color: #fff;
     width: -webkit-fill-available;
@@ -100,7 +152,7 @@ a.contact {
 
 a.contact:hover {
     bottom: 40px;
-    
+
 }
 
 header.sticky {
@@ -177,15 +229,23 @@ main.home {
 
         div.nb1,
         &>img {
-            margin-left: 0; /* var a bouger en js pour anim */
+            margin-left: 0;
+            /* var a bouger en js pour anim */
         }
 
         div.hero {
+            display: flex
+;
+            align-items: center;
+            justify-content: flex-start;
             overflow: hidden;
             position: relative;
             width: 100vw;
             height: -webkit-fill-available;
             background-color: var(--primary);
+            padding: 32px 0;
+            flex-direction: column-reverse;
+            gap: 32px;
 
             img.anihero {
                 position: absolute;
@@ -198,7 +258,8 @@ main.home {
 
             div.text {
                 position: absolute;
-                left: 20vw;
+                left: 0;
+                bottom: -25vh;
                 transform: rotate(-40deg);
 
                 div.beerStroke {
@@ -232,6 +293,65 @@ main.home {
                     letter-spacing: 8px;
                     color: var(--secondary);
                     width: max-content;
+                }
+            }
+
+            div.tablist {
+                position: relative;
+                z-index: 3;
+                background-color: rgba(217, 217, 217, 0.66);
+                border-radius: 16px;
+                padding: 8px;
+                display: flex;
+                gap: 12px;
+                height: fit-content;
+
+                button {
+                    height: 12px;
+                    width: 12px;
+                    border-radius: 6px;
+                    background-color: #fff;
+                    border: none;
+                }
+
+                button:hover {
+                    cursor: pointer;
+                }
+            }
+
+            a.more {
+                transition: all 300ms;
+                overflow: hidden;
+                text-decoration: none;
+                position: absolute;
+                z-index: 3;
+                bottom: 32px;
+                left: 32px;
+                padding: 8px;
+                background-color: #2d2d2d;
+                color: #fff;
+                border-radius: 100px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                
+                img {
+                    width: 40px;
+                    height: fit-content;
+                }
+
+                p {
+                    transition: all 300ms;
+                    display: none;
+                    white-space : nowrap;
+                    width: max-content;
+                }
+            }
+
+            a.more:hover {
+
+                p {
+                    display: block;
                 }
             }
         }

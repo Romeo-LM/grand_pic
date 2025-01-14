@@ -52,6 +52,23 @@ get_header();
                     </p>
                     <p class="beer"><?= esc_textarea(get_field('hero' .  $i + 1 . '_beer_name')); ?></p>
                 </div>
+
+                <div class="tablist">
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                </div>
+
+                <a class="button" href="<?php echo esc_url(get_field('hero' . $i + 1 . '_page')); ?>">
+                    <div class="ellipse"></div>
+                    <p>découvrir la bière</p>
+                </a>
+
+                <a href="/nos-biere" class="more">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/plus.svg'); ?>" alt="more">
+                    <p>découvrir toute la gamme</p>
+                </a>
+
             </div>
         <?php
         }
