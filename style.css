@@ -214,11 +214,13 @@ main.home {
     }
 
     section.heroBiere {
+        transition: all 300ms;
         height: 100vh;
         overflow: hidden;
         display: flex;
 
         img.bierehero {
+            transition: all 300ms;
             position: absolute;
             left: calc(50vw + 100vw * var(--nb) - (var(--width) / 2));
             transform: translateY(-50%);
@@ -229,11 +231,13 @@ main.home {
 
         div.nb1,
         &>img {
+            transition: all 300ms;
             margin-left: 0;
             /* var a bouger en js pour anim */
         }
 
         div.hero {
+            transition: all 300ms;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -306,6 +310,7 @@ main.home {
                 height: fit-content;
 
                 button {
+                    transition: all 300ms;
                     height: 12px;
                     width: 12px;
                     border-radius: 6px;
@@ -313,7 +318,12 @@ main.home {
                     border: none;
                 }
 
+                button.selected {
+                    background-color: #000;
+                }
+
                 button:hover {
+                    background-color: #000;
                     cursor: pointer;
                 }
             }
@@ -410,26 +420,26 @@ main.home {
 
                 div.beerAnim {
                     transform: translateY(-150px);
-    
+
                     img.beerAnim1 {
                         z-index: 1;
                         transform: translate(50px, 12px) rotateZ(-20deg) scale(0.8);
                     }
-    
+
                     img.beerAnim2 {
                         z-index: 2;
                         transform: translateX(25px) rotateZ(-8deg) scale(0.9);
                     }
-    
+
                     img.beerAnim3 {
                         z-index: 3;
                     }
-    
-                    img.beerAnim4 { 
+
+                    img.beerAnim4 {
                         z-index: 2;
                         transform: translateX(-25px) rotateZ(8deg) scale(0.9);
                     }
-    
+
                     img.beerAnim5 {
                         z-index: 1;
                         transform: translate(-50px, 12px) rotateZ(20deg) scale(0.8);
@@ -463,7 +473,7 @@ main.home {
                     z-index: 3;
                 }
 
-                img.beerAnim4 { 
+                img.beerAnim4 {
                     z-index: 2;
                     transform: translateX(-25px) scale(0.9);
                 }

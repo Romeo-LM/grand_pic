@@ -55,7 +55,7 @@ get_header();
                     <p class="beer"><?= esc_textarea(get_field('hero' .  $i + 1 . '_beer_name')); ?></p>
                 </div>
 
-                <div class="tablist">
+                <div class="tablist <?= "tablist" . $i+1?>">
                     <button type="button"></button>
                     <button type="button"></button>
                     <button type="button"></button>
