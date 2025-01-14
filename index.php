@@ -64,15 +64,30 @@ get_header();
                     <p>découvrir la bière</p>
                 </a>
 
-                <a href="/nos-biere" class="more">
-                    <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/plus.svg'); ?>" alt="more">
-                    <p>découvrir toute la gamme</p>
-                </a>
+                <div class="more">
+                    <a href="/nos-biere">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/plus.svg'); ?>" alt="more">
+                        <span>découvrir toute la gamme</span>
+                    </a>
+                </div>
+
 
             </div>
         <?php
         }
         ?>
+    </section>
+
+    <section class="gammes">
+        <button type="button">
+            <h3>les classiques</h3>
+        </button>
+        <button type="button">
+            <h3>les éphémères</h3>
+        </button>
+        <button type="button">
+            <h3>les personnalisées</h3>
+        </button>
     </section>
 
 </main>
