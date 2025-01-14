@@ -40,7 +40,7 @@ $child_pages_query = new WP_Query($args);
                 $secondary = get_field('s_beer_color');
         ?>
 
-                <a href="<?php the_permalink(); ?>" class="card" style="--primary: <?= esc_attr($primary); ?>;  --secondary: <?= esc_attr($secondary); ?>;">
+                <a href="<?php the_permalink(); ?>" class="card" style="--primary: <?= esc_attr($primary); ?>;  --secondary: <?= esc_attr($secondary); ?>">
 
                     <svg class="gouteG" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.94 58.17">
                         <g id="Calque_1-2" data-name="Calque 1">

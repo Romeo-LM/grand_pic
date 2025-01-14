@@ -4,6 +4,7 @@ Template Name: Nouvelle Biere
 */
 $primary = get_field('p_beer_color');
 $secondary = get_field('s_beer_color');
+$imgSrc = get_field('beer_img');
 $nbPicto = 4; //a modifier également dans le JS
 
 get_header();
@@ -13,6 +14,7 @@ get_header();
     :root {
         --primary: <?= esc_attr($primary); ?>;
         --secondary: <?= esc_attr($secondary); ?>;
+        --img: <?= esc_url($imgSrc); ?>;
     }
 
     body {
@@ -31,7 +33,9 @@ get_header();
         <h2>du bon, du bio</h2>
 
         <div class="beerPicto">
-            <img src="<?php echo esc_url(get_field('beer_img')); ?>" alt="<?= "bière" . the_title(); ?>">
+            <div class="image-container" style="--img: url('<?php echo esc_url(get_field('beer_img')); ?>');">
+                <img src="<?php echo esc_url(get_field('beer_img')); ?>" alt="<?= "bière" . the_title(); ?>">
+            </div>
 
             <?php
             for ($i = 0; $i < $nbPicto; $i++) {
@@ -70,10 +74,10 @@ get_header();
 
     <section class="emblem">
 
-    <div class="title">
-        <h2><?php echo esc_textarea(get_field('emblem_name')) ?></h2>
-        <p><?php echo esc_textarea(get_field('emblem_name')) ?></p>
-    </div>
+        <div class="title">
+            <h2><?php echo esc_textarea(get_field('emblem_name')) ?></h2>
+            <p><?php echo esc_textarea(get_field('emblem_name')) ?></p>
+        </div>
 
         <div class="content">
             <img src="<?php echo esc_url(get_field('emblem_img')); ?>" alt="image de l'animal emblème">

@@ -8,6 +8,11 @@ Version: 1.0
     src: url(./src/fonts/edo_sz/edosz.ttf);
 }
 
+@font-face {
+    font-family: Neographik;
+    src: url(./src/fonts/Neographik/Neographik.otf);
+}
+
 h1,
 h2,
 h3,
@@ -91,6 +96,134 @@ header.sticky {
     z-index: 1000;
 }
 
+body>div.title {
+    width: -webkit-fill-available;
+    margin: auto;
+    position: fixed;
+    z-index: -1;
+    top: 248px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    h1 {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        span.red {
+            color: #f00;
+        }
+
+    }
+
+    img {
+        position: static;
+        height: 248px;
+    }
+}
+
+main.home {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    section.hero {
+        height: calc(100vh - 97px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        overflow: hidden;
+        width: 100vw;
+
+        img {
+            width: -webkit-fill-available;
+        }
+    }
+
+    section.heroBiere {
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+
+        img.bierehero {
+            position: absolute;
+            left: calc(50vw + 100vw * var(--nb) - (var(--width) / 2));
+            transform: translateY(-50%);
+            z-index: 3;
+            height: 80vh;
+            width: fit-content;
+        }
+
+        div.nb1,
+        &>img {
+            margin-left: 0; /* var a bouger en js pour anim */
+        }
+
+        div.hero {
+            overflow: hidden;
+            position: relative;
+            width: 100vw;
+            height: -webkit-fill-available;
+            background-color: var(--primary);
+
+            img.anihero {
+                position: absolute;
+                z-index: 3;
+                left: calc(var(--width) / -2);
+                bottom: calc(var(--height) / -4);
+                height: 700px;
+                width: fit-content;
+            }
+
+            div.text {
+                position: absolute;
+                left: 20vw;
+                transform: rotate(-40deg);
+
+                div.beerStroke {
+                    position: relative;
+
+                    p.beer {
+                        -webkit-text-stroke: 4px var(--secondary);
+                    }
+
+                    p.beer:last-child {
+                        position: absolute;
+                        top: 0;
+                        color: var(--primary);
+                    }
+                }
+
+
+                p.beer {
+                    font-family: EDO;
+                    font-size: 260px;
+                    line-height: 264px;
+                    color: var(--secondary);
+                    width: max-content;
+                }
+
+                p.ani {
+                    font-family: Neographik;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 64px;
+                    letter-spacing: 8px;
+                    color: var(--secondary);
+                    width: max-content;
+                }
+            }
+        }
+    }
+}
+
 main.newBiere {
 
     section.hero {
@@ -131,8 +264,36 @@ main.newBiere {
             justify-content: center;
             align-items: center;
 
-            img {
+            .image-container {
+                position: relative;
+                display: inline-block;
                 height: 400px;
+
+                img {
+                    position: relative;
+                    z-index: 10;
+                    height: 100%;
+                    display: block;
+                }
+
+                &::after {
+                    transform: scale(1.2);
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    mask-image: var(--img);
+                    -webkit-mask-image: var(--img);
+                    mask-repeat: no-repeat;
+                    mask-size: contain;
+                    -webkit-mask-repeat: no-repeat;
+                    -webkit-mask-size: contain;
+                    background: var(--primary);
+                    z-index: 9;
+                    filter: blur(0px);
+                }
             }
 
             div.composant {
@@ -147,8 +308,8 @@ main.newBiere {
 
                 div.line {
                     height: 1px;
-                    width: 144px;
-                    min-width: 80px;
+                    width: 200px;
+                    min-width: 200px;
                     background-color: #fff;
                 }
 
@@ -165,6 +326,7 @@ main.newBiere {
                     min-width: 320px;
 
                     h3 {
+                        text-transform: uppercase;
                         color: var(--secondary);
                         font-size: 24px;
                         font-weight: 700;
@@ -179,25 +341,29 @@ main.newBiere {
             }
 
             div.composant1 {
+                text-align: left;
                 top: 0;
-                left: calc(50% + 64px + var(--width) / 2);
+                left: calc(32px + var(--width) / 2);
             }
 
             div.composant2 {
+                text-align: right;
                 flex-direction: row-reverse;
                 top: 88px;
-                right: calc(50% + 64px + var(--width) / 2);
+                right: calc(32px + var(--width) / 2);
             }
 
             div.composant3 {
+                text-align: left;
                 top: 164px;
-                left: calc(50% + 64px + var(--width) / 2);
+                left: calc(32px + var(--width) / 2);
             }
 
             div.composant4 {
+                text-align: right;
                 flex-direction: row-reverse;
                 top: 276px;
-                right: calc(50% + 64px + var(--width) / 2);
+                right: calc(32px + var(--width) / 2);
             }
 
         }
@@ -250,11 +416,6 @@ main.newBiere {
                 line-height: 190px;
                 text-align: center;
                 -webkit-text-stroke: 4px var(--secondary);
-                /* text-shadow:
-                    4px 4px 0 var(--secondary),
-                    -4px 4px 0 var(--secondary),
-                    4px -4px 0 var(--secondary),
-                    -4px -4px 0 var(--secondary); */
             }
 
             p {
