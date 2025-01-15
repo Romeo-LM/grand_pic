@@ -173,11 +173,11 @@ get_header();
                 pensés spécialement pour vous.</p>
         </div>
 
-        <div class="content">
+        <div class="content carousel" data-flickity='{ "wrapAround": true }'>
         <?php
         for ($i=0; $i < 5; $i++) { 
             ?>
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/pro' .$i+1 .'.png'); ?>" alt="Photo Pro">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/pro' .$i+1 .'.png'); ?>" alt="Photo Pro" class="carousel-cell">
             <?php
         }
         ?>

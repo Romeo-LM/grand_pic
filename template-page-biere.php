@@ -25,7 +25,7 @@ $child_pages_query = new WP_Query($args);
         <a href="/nos-bieres"> bières de gamme</a>
         <a href="/nos-bieres">bières éphémères</a>
         <a href="/nos-bieres">bière en barique</a>
-        <a href="/nos-bieres">créer vos bières</a>
+        <a href="/nos-bieres">créez vos bières</a>
     </section>
 
     <section class="beers">

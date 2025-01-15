@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const tablist = document.querySelectorAll('div.tablist');
     const hero = document.querySelectorAll('div.nb1, section.heroBiere>img');
 
-    console.log(hero);
-
     const numSteps = 3;
 
     elements.forEach(image => {
