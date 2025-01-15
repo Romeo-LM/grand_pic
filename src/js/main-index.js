@@ -111,6 +111,8 @@ document.addEventListener('DOMContentLoaded', () => {
         path: lottiePath
     });
 
+    
+
     syncSelectedClass(); 
     autoAdvanceMargin(hero, numSteps, 5000);
 });
