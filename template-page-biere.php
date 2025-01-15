@@ -6,26 +6,58 @@ Template Name: Présentation Bieres
 get_header();
 
 // mettre un if qui regarde pour un get pour filtrer dans les args avec order 0 -> 250 ; 250 -> 500; 500 -> 750 ...
-// Configuration de la requête pour obtenir les pages enfants
+add_filter('posts_where', 'custom_menu_order_filter');
+
+$all = "selected";
+$gamme = "";
+$temp = "";
+$barique = "";
+$perso = "";
+
+function custom_menu_order_filter($where) {
+    global $wpdb, $all, $gamme, $temp, $barique, $perso;
+
+    if (isset($_GET['f'])) {
+        $all = "";
+        if ($_GET['f'] == 'gamme') {
+            $where .= " AND {$wpdb->posts}.menu_order >= 0 AND {$wpdb->posts}.menu_order <= 250";
+            $gamme = "selected";
+        } elseif ($_GET['f'] == 'temp') {
+            $where .= " AND {$wpdb->posts}.menu_order >= 250 AND {$wpdb->posts}.menu_order <= 500";
+            $temp = "selected";
+        } elseif ($_GET['f'] == 'barique') {
+            $where .= " AND {$wpdb->posts}.menu_order >= 500 AND {$wpdb->posts}.menu_order <= 750";
+            $barique = "selected";
+        } elseif ($_GET['f'] == 'perso') {
+            $where .= " AND {$wpdb->posts}.menu_order >= 750 AND {$wpdb->posts}.menu_order <= 1000";
+            $perso = "selected";
+        }
+    }
+
+    return $where;
+}
+
 $args = [
     'post_type'      => 'page',
     'post_status'    => 'publish',
-    'posts_per_page' => -1, // Obtenez toutes les pages enfants
-    'post_parent'    => get_the_ID(), // Limite aux enfants de la page actuelle
-    'orderby'        => 'menu_order', // Tri selon l'ordre des pages
-    'order'          => 'ASC', // Ordre croissant
+    'posts_per_page' => -1,
+    'post_parent'    => get_the_ID(),
+    'orderby'        => 'menu_order',
+    'order'          => 'ASC',
 ];
 
-// Requête personnalisée
 $child_pages_query = new WP_Query($args);
+
+remove_filter('posts_where', 'custom_menu_order_filter');
+
 ?>
 <main class="homeBiere">
     <section class="filter">
-        <a href="/nos-bieres"> toutes NOS BIÈRES</a>
-        <a href="/nos-bieres"> bières de gamme</a>
-        <a href="/nos-bieres">bières éphémères</a>
-        <a href="/nos-bieres">bière en barique</a>
-        <a href="/nos-bieres">créez vos bières</a>
+        <a href="/nos-bieres" class="<?= $all ?>"> toutes NOS BIÈRES</a>
+        <a href="/nos-bieres?f=gamme" class="<?= $gamme ?>"> bières de gamme</a>
+        <a href="/nos-bieres?f=temp" class="<?= $temp ?>">bières éphémères</a>
+        <a href="/nos-bieres?f=barique"class="<?= $barique ?>">bière en barique</a>
+        <a href="/nos-bieres?f=perso" class="<?= $perso ?>">créez vos bières</a>
     </section>
 
     <section class="beers">
@@ -71,7 +103,17 @@ $child_pages_query = new WP_Query($args);
         <?php
             }
         } else {
-            echo '<p>Aucune page enfant trouvée.</p>';
+            if (isset($_GET['f'])) {
+                if ($_GET['f'] == 'gamme') {
+                    echo '<p>Aucune bière n\'est disponible en ce moment. Revener plus tard ☺</p>';
+                } elseif ($_GET['f'] == 'temp') {
+                    echo '<p>Aucune bière éphémère n\'est disponible en ce moment. Revener plus tard ☺</p>';
+                } elseif ($_GET['f'] == 'barique') {
+                    echo '<p>Aucune bière élévée en barique n\'est disponible en ce moment. Revener plus tard ☺</p>';
+                } elseif ($_GET['f'] == 'perso') {
+                    echo '<p>Nous ne faisons plus de bière personnalisée en ce moment. Revener plus tard ☺</p>';
+                }
+            }
         }
 
         // Réinitialisez les données de la requête WordPress

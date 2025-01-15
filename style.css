@@ -735,6 +735,7 @@ main.newBiere {
         overflow: hidden;
 
         h1 {
+            max-width: 640px;
             color: #fff;
             font-family: EDO;
             text-align: center;
@@ -1000,6 +1001,13 @@ main.homeBiere {
             overflow: hidden;
             width: fit-content;
             height: fit-content;
+
+            &.selected {
+                &::before {
+                    opacity: 1;
+                    transform: scaleX(150);
+                }
+            }
 
             &::before {
                 transition: 300ms;
