@@ -11,10 +11,10 @@
     <header>
         <nav>
             <div>
-                <a href="/nos-bieres">NOS BIÈRES</a>
+                <a href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>">NOS BIÈRES</a>
                 <a href="">FABRICATION</a>
             </div>
-            <a href="/">
+            <a href="<?php echo esc_url(get_home_url()); ?>">
                 <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/logo.svg'); ?>" alt="Logo brasserie mauriennaise du Grand Pip">
             </a>
             <div>
