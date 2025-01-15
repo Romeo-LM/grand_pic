@@ -55,13 +55,13 @@ get_header();
                     <p class="beer right"><?= esc_textarea(get_field('hero' .  $i + 1 . '_beer_name')); ?></p>
                 </div>
 
-                <div class="tablist <?= "tablist" . $i+1?>">
+                <div class="tablist <?= "tablist" . $i + 1 ?>">
                     <button type="button"></button>
                     <button type="button"></button>
                     <button type="button"></button>
                 </div>
 
-                <a class="button" href="<?php echo esc_url(get_field('hero' . $i + 1 . '_page')); ?>">
+                <a class="buttonB" href="<?php echo esc_url(get_field('hero' . $i + 1 . '_page')); ?>">
                     <div class="ellipse"></div>
                     <p>Découvrir la bière</p>
                 </a>
@@ -117,7 +117,6 @@ get_header();
 
             <div class="line"></div>
 
-
             <div class="card">
                 <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/ecolo.svg'); ?>" alt="picto la main verte">
                 <p>Savoir-faire artisanal et tradition</p>
@@ -126,7 +125,7 @@ get_header();
             <div class="line"></div>
 
             <div class="card">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/tere.svg'); ?>" alt="picto terre">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/terre.svg'); ?>" alt="picto terre">
                 <p>Soutien aux écosystèmes locaux</p>
             </div>
 
@@ -138,7 +137,10 @@ get_header();
             </div>
         </div>
 
-        <a href="" class="button">En savoir plus</a>
+        <a href="" class="buttonN">
+            <div class="ellipse"></div>
+            <p>En savoir plus</p>
+        </a>
     </section>
 
 </main>
