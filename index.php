@@ -7,6 +7,10 @@ $beer = ["247", "temp", "perso"];
 get_header();
 ?>
 
+<script>
+    const lottiePath = "<?php echo esc_url(get_template_directory_uri() . '/src/medias/lotties_animation.json'); ?>";
+</script>
+
 <div class="title">
     <h1><span class="red">brasserie</span> mauriennaise, massif de la lauzière </h1>
     <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/grand-pic.svg'); ?>" alt="Grand Pic">
@@ -141,6 +145,24 @@ get_header();
             <div class="ellipse"></div>
             <p>En savoir plus</p>
         </a>
+    </section>
+
+    <section class="fabrication">
+
+        <div class="animation"></div>
+
+        <div class="content">
+            <div class="title">
+                <h2>La fabrication </h2>
+                <p>Pour la réalisation de ses bières uniques, la brasserie met en œuvre un savoir-faire précis et un processus de fabrication authentique à découvrir !</p>
+            </div>
+
+            <a href="" class="buttonB">
+                <div class="ellipse"></div>
+                <p>En savoir plus</p>
+            </a>
+
+        </div>
     </section>
 
 </main>

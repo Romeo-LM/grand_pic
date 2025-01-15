@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const tablist = document.querySelectorAll('div.tablist');
     const hero = document.querySelectorAll('div.nb1, section.heroBiere>img');
 
+    console.log(hero);
+
+    const numSteps = 3;
+
     elements.forEach(image => {
         image.addEventListener('load', () => {
             let width = image.offsetWidth;
@@ -58,17 +62,18 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Fonction pour faire avancer la margin-left automatiquement
-    const autoAdvanceMargin = (hero, tablist, numSteps, interval = 5000) => {
+    const autoAdvanceMargin = (hero, numSteps, interval = 5000) => {
         let currentStep = 0;
 
         // Fonction pour avancer d'un cran
         const advance = () => {
-            currentStep = (currentStep + 1) % numSteps; // Boucler entre 0, 1, 2, ..., numSteps - 1
+            currentStep = (currentStep + 1) % numSteps;
             const marginValue = `-${currentStep * 100}vw`;
 
             // Appliquer la nouvelle margin-left à tous les éléments hero
             hero.forEach(el => {
                 el.style.marginLeft = marginValue;
+                console.log(el);
             });
 
             syncSelectedClass();
@@ -98,8 +103,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    syncSelectedClass();
+    lottie.loadAnimation({
+        container: document.querySelector('div.animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: lottiePath
+    });
 
-    const numSteps = 3;
-    autoAdvanceMargin(hero, tablist, numSteps, 5000);
+    syncSelectedClass(); 
+    autoAdvanceMargin(hero, numSteps, 5000);
 });

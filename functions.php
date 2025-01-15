@@ -17,6 +17,8 @@ function add_script()
 
     if ( is_front_page()) {
         wp_enqueue_script('index-js', get_template_directory_uri() . '/src/js/main-index.js', array(), false, true);
+        wp_enqueue_script('lotties-js', "https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js", array(), false, true);
     }
 }
 add_action('wp_enqueue_scripts', 'add_script');
+
