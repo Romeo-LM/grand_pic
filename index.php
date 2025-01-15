@@ -63,7 +63,7 @@ get_header();
 
                 <a class="button" href="<?php echo esc_url(get_field('hero' . $i + 1 . '_page')); ?>">
                     <div class="ellipse"></div>
-                    <p>découvrir la bière</p>
+                    <p>Découvrir la bière</p>
                 </a>
 
                 <div class="more">

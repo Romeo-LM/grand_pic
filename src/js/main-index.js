@@ -57,6 +57,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    // Fonction pour faire avancer la margin-left automatiquement
+    const autoAdvanceMargin = (hero, tablist, numSteps, interval = 5000) => {
+        let currentStep = 0;
+
+        // Fonction pour avancer d'un cran
+        const advance = () => {
+            currentStep = (currentStep + 1) % numSteps; // Boucler entre 0, 1, 2, ..., numSteps - 1
+            const marginValue = `-${currentStep * 100}vw`;
+
+            // Appliquer la nouvelle margin-left à tous les éléments hero
+            hero.forEach(el => {
+                el.style.marginLeft = marginValue;
+            });
+
+            syncSelectedClass();
+        };
+
+        // Démarrer l'intervalle pour avancer automatiquement
+        setInterval(advance, interval);
+    };
+
     hero.forEach(el => {
         el.addEventListener('transitionend', (event) => {
             if (event.propertyName === 'margin-left') {
@@ -76,5 +97,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
     syncSelectedClass();
+
+    const numSteps = 3;
+    autoAdvanceMargin(hero, tablist, numSteps, 5000);
 });
