@@ -33,6 +33,16 @@ Version: 1.0
     }
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
 h1,
 h2,
 h3,
@@ -1154,5 +1164,42 @@ main.homeBiere {
 }
 
 main.p404 {
+    height: calc(100vh - 97px);
+    max-width: 1440px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    padding-left: 144px;
+
+    div.content {
+        display: flex;
+        flex-direction: column;
+        gap: 320px;
+
+        div.title {
+
+            h1 {
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: 800;
+            }
+
+            h2 {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 700;
+            }
+        }
+    }
     
+    img {
+        transition: all 300ms;
+        height: 100vw;
+        width: fit-content;
+        position: absolute;
+        top: -50vh;
+        right: -30vw;
+        animation: rotate 20s infinite linear;
+    }
 }
