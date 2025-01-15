@@ -1,0 +1,570 @@
+{
+    "key": "group_678275dde7018",
+    "title": "Nouvelle bière",
+    "fields": [
+        {
+            "key": "field_678275df2dd57",
+            "label": "Couleur principale de la bière",
+            "name": "p_beer_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "renseigner la couleur principale de votre bière",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_678276d22950a",
+            "label": "Couleur secondaire de la bière",
+            "name": "s_beer_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "renseigner la couleur secondaire de votre bière",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000000",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_678286bc5a808",
+            "label": "image Hero de la bière",
+            "name": "hero_img",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "renseigner l'image Hero de votre nouvelle bière",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "large"
+        },
+        {
+            "key": "field_6782877e5a809",
+            "label": "Image de votre bière",
+            "name": "beer_img",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "renseigner le mock-up de votre bière",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_678288625a80a",
+            "label": "Picto 1",
+            "name": "picto_1_img",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "renseigner un picto pour décrire la bière",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ".svg",
+            "allow_in_bindings": 1
+        },
+        {
+            "key": "field_67828c435a80b",
+            "label": "Titre picto 1",
+            "name": "picto_1_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le titre du 1er picto",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "Houblon ...",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67828cb15a80c",
+            "label": "Texte picto 1",
+            "name": "picto_1_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner un texte descriptif d'une caractéristique de la bière pour illustrer le picto",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "Les houblons biologiques de ...",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67828faddb448",
+            "label": "Picto 2",
+            "name": "picto_2_img",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "renseigner un picto pour décrire la bière",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_67829060db449",
+            "label": "Titre picto 2",
+            "name": "picto_2_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le titre du 1er picto",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "Houblon ...",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67829088db44b",
+            "label": "Texte picto 2",
+            "name": "picto_2_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner un texte descriptif d'une caractéristique de la bière pour illustrer le picto",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "Les houblons biologiques de ...",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67829078db44a",
+            "label": "Picto 3",
+            "name": "picto_3_img",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "renseigner un picto pour décrire la bière",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_678290be5583b",
+            "label": "Titre picto 3",
+            "name": "picto_3_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le titre du 1er picto",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "Houblon ...",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_678290fd5583c",
+            "label": "Texte picto 3",
+            "name": "picto_3_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner un texte descriptif d'une caractéristique de la bière pour illustrer le picto",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "Les houblons biologiques de ...",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6782913e11f88",
+            "label": "Picto 4",
+            "name": "picto_4_img",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "renseigner un picto pour décrire la bière",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_6782914211f89",
+            "label": "Titre picto 4",
+            "name": "picto_4_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le titre du 1er picto",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "Houblon ...",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6782914711f8a",
+            "label": "Texte picto 4",
+            "name": "picto_4_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner un texte descriptif d'une caractéristique de la bière pour illustrer le picto",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "Les houblons biologiques de ...",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67839194a7d16",
+            "label": "Ingrédient supplémentaire",
+            "name": "more_ingredient",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "décocher si la bière n'a pas d'ingrédient supplementaire",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "ajouter un ingrédient supplémentaire",
+            "default_value": 1,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_67839220a7d17",
+            "label": "texte de l'ingrédient supplémentaire",
+            "name": "more_ingredient_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le texte à propos de l'ingrédient supplémentaire",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67839194a7d16",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "75",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "Nous ajoutons ...",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6783a01a72c6c",
+            "label": "Nom de l'animal emblème",
+            "name": "emblem_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le nom de l'animal emblème",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "Le lynx boréal",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67842d28d8ae2",
+            "label": "image de l'animal (étiquette de la bière)",
+            "name": "beer_ani_img",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "renseigner l'image de l'animal sur l'étiquette de la bière",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_6783acda15566",
+            "label": "image de l'animal emblème ( img de l'animal pour accompagner le texte)",
+            "name": "emblem_img",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "renseigner l'image de l'animal emblème",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_6783a7650926a",
+            "label": "Qui est-il ?",
+            "name": "who",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "renseigner  un texte informatif d'écrivant l'animal",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_6783a7bd0926b",
+            "label": "Mais c'est aussi",
+            "name": "more_about",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "renseigner un texte décrivant les caractéristiques de l'animal",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_6783a92f0926c",
+            "label": "En Lauzière",
+            "name": "history",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "renseigner un texte sur l'histoire de l'animal en Lauzière",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": "br"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-new-biere.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1736932527
+}
