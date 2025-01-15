@@ -28,44 +28,48 @@ get_header();
         <?php
         for ($i = 0; $i < $nbHero; $i++) {
 
-            $primary = get_field('hero' . $i + 1 . '_p_color');
-            $secondary = get_field('hero' . $i + 1 . '_s_color');
-        ?>
-            <img class="bierehero <?= esc_textarea('nb' . $i + 1); ?>" src="<?php echo esc_url(get_field('hero' . $i + 1 . '_mockup')); ?>" alt="hero bière" style="--nb :<?= esc_textarea($i); ?>;">
+            $id = $i + 1;
 
-            <div class="hero <?= esc_textarea('nb' . $i + 1); ?>" style="--primary: <?= esc_attr($primary); ?>;  --secondary: <?= esc_attr($secondary); ?>;">
-                <img class="anihero" src="<?php echo esc_url(get_field('hero' . $i + 1 . '_ani')); ?>" alt="hero bière animal">
+            $primary = get_field('hero' . $id. '_p_color');
+            $secondary = get_field('hero' . $id . '_s_color');
+
+            $field_name = 'hero' . $id . '_mockup';
+        ?>
+            <img class="bierehero <?= esc_textarea('nb' . $i); ?>" data-fieldname="<?php echo $field_name; ?>" src="<?php echo (get_field($field_name)); ?>" alt="hero bière" style="--nb :<?= esc_textarea($i); ?>;">
+
+            <div class="hero <?= esc_textarea('nb' . $id); ?>" style="--primary: <?= esc_attr($primary); ?>;  --secondary: <?= esc_attr($secondary); ?>;">
+                <img class="anihero" src="<?php echo esc_url(get_field('hero' . $id . '_ani')); ?>" alt="hero bière animal">
 
                 <div class="text">
-                    <p class="beer right"><?= esc_textarea(get_field('hero' .  $i + 1 . '_beer_name')); ?></p>
+                    <p class="beer right"><?= esc_textarea(get_field('hero' .  $id . '_beer_name')); ?></p>
                     <p class="ani left">
                         <?php
                         for ($j = 0; $j < 8; $j++) {
-                            echo esc_textarea(get_field('hero' .  $i + 1 . '_ani_name') . " ");
+                            echo esc_textarea(get_field('hero' .  $id . '_ani_name') . " ");
                         }
                         ?>
                     </p>
                     <div class="beerStroke right">
-                        <p class="beer"><?= esc_textarea(get_field('hero' .  $i + 1 . '_beer_name')); ?></p>
-                        <p class="beer"><?= esc_textarea(get_field('hero' .  $i + 1 . '_beer_name')); ?></p>
+                        <p class="beer"><?= esc_textarea(get_field('hero' .  $id . '_beer_name')); ?></p>
+                        <p class="beer"><?= esc_textarea(get_field('hero' .  $id . '_beer_name')); ?></p>
                     </div>
                     <p class="ani left">
                         <?php
                         for ($j = 0; $j < 8; $j++) {
-                            echo esc_textarea(get_field('hero' .  $i + 1 . '_ani_name') . " ");
+                            echo esc_textarea(get_field('hero' .  $id . '_ani_name') . " ");
                         }
                         ?>
                     </p>
-                    <p class="beer right"><?= esc_textarea(get_field('hero' .  $i + 1 . '_beer_name')); ?></p>
+                    <p class="beer right"><?= esc_textarea(get_field('hero' .  $id . '_beer_name')); ?></p>
                 </div>
 
-                <div class="tablist <?= "tablist" . $i + 1 ?>">
+                <div class="tablist <?= "tablist" . $id ?>">
                     <button type="button"></button>
                     <button type="button"></button>
                     <button type="button"></button>
                 </div>
 
-                <a class="buttonB" href="<?php echo esc_url(get_field('hero' . $i + 1 . '_page')); ?>">
+                <a class="buttonB" href="<?php echo esc_url(get_field('hero' . $id . '_page')); ?>">
                     <div class="ellipse"></div>
                     <p>Découvrir la bière</p>
                 </a>
@@ -76,8 +80,6 @@ get_header();
                         <span>Découvrir toute la gamme</span>
                     </a>
                 </div>
-
-
             </div>
         <?php
         }
@@ -94,8 +96,9 @@ get_header();
                 <div class="beerAnim">
                     <?php
                     for ($i = 0; $i < 5; $i++) {
+                    $id = $i + 1;
                     ?>
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/beer_' . $beer[$j] . $i + 1 . '.png'); ?>" alt="" class="<?= "beerAnim" . $i + 1 ?>">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/beer_' . $beer[$j] . $id . '.png'); ?>" alt="" class="<?= "beerAnim" . $id ?>">
                     <?php
                     }
                     ?>
@@ -173,11 +176,13 @@ get_header();
                 pensés spécialement pour vous.</p>
         </div>
 
-        <div class="content carousel" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 2000, "draggable": true, "pageDots": false, "prevNextButtons": false, "selectedAttraction": 0.2, "friction": 0.8 }'>
         <?php
         for ($i=0; $i < 5; $i++) { 
+
+            $id = $i + 1;
             ?>
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/pro' .$i+1 .'.png'); ?>" alt="Photo Pro" class="carousel-cell">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/pro' . $id .'.png'); ?>" alt="Photo Pro" class="carousel-cell">
             <?php
         }
         ?>

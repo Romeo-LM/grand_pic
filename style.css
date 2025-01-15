@@ -699,15 +699,28 @@ main.home {
             }
         }
 
+        .carousel {
+            width: 100vw;
+        }
+
+        .carousel-cell {
+            width: fit-content;
+            height: 400px;
+            margin-right: 40px;
+            border-radius: 5px;
+            counter-increment: carousel-cell;
+        }
+
+        .is-selected {
+            transform: scale(1.2);
+        }
+
         div.content {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 40px;
 
-            .carousel-cell.is-selected {
-                transform: scale(1.2);
-            }
         }
     }
 }
