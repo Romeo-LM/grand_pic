@@ -33,26 +33,26 @@ get_header();
                 <img class="anihero" src="<?php echo esc_url(get_field('hero' . $i + 1 . '_ani')); ?>" alt="hero bière animal">
 
                 <div class="text">
-                    <p class="beer"><?= esc_textarea(get_field('hero' .  $i + 1 . '_beer_name')); ?></p>
-                    <p class="ani">
+                    <p class="beer right"><?= esc_textarea(get_field('hero' .  $i + 1 . '_beer_name')); ?></p>
+                    <p class="ani left">
                         <?php
-                        for ($j = 0; $j < 5; $j++) {
+                        for ($j = 0; $j < 8; $j++) {
                             echo esc_textarea(get_field('hero' .  $i + 1 . '_ani_name') . " ");
                         }
                         ?>
                     </p>
-                    <div class="beerStroke">
+                    <div class="beerStroke right">
                         <p class="beer"><?= esc_textarea(get_field('hero' .  $i + 1 . '_beer_name')); ?></p>
                         <p class="beer"><?= esc_textarea(get_field('hero' .  $i + 1 . '_beer_name')); ?></p>
                     </div>
-                    <p class="ani">
+                    <p class="ani left">
                         <?php
-                        for ($j = 0; $j < 5; $j++) {
+                        for ($j = 0; $j < 8; $j++) {
                             echo esc_textarea(get_field('hero' .  $i + 1 . '_ani_name') . " ");
                         }
                         ?>
                     </p>
-                    <p class="beer"><?= esc_textarea(get_field('hero' .  $i + 1 . '_beer_name')); ?></p>
+                    <p class="beer right"><?= esc_textarea(get_field('hero' .  $i + 1 . '_beer_name')); ?></p>
                 </div>
 
                 <div class="tablist <?= "tablist" . $i+1?>">
@@ -69,7 +69,7 @@ get_header();
                 <div class="more">
                     <a href="/nos-biere">
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/plus.svg'); ?>" alt="more">
-                        <span>découvrir toute la gamme</span>
+                        <span>Découvrir toute la gamme</span>
                     </a>
                 </div>
 

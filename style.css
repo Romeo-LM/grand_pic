@@ -13,6 +13,24 @@ Version: 1.0
     src: url(./src/fonts/Neographik/Neographik.otf);
 }
 
+@keyframes textAnimRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(30%);
+    }
+}
+
+@keyframes textAnimLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-30%);
+    }
+}
+
 h1,
 h2,
 h3,
@@ -264,6 +282,14 @@ main.home {
                 left: 0;
                 bottom: -25vh;
                 transform: rotate(-40deg);
+
+                .left {
+                    animation: textAnimLeft 5s infinite alternate linear;
+                }
+
+                .right {
+                    animation: textAnimRight 5s infinite alternate linear;
+                }
 
                 div.beerStroke {
                     position: relative;
