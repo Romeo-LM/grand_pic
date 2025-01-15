@@ -366,7 +366,7 @@
             "aria-label": "",
             "type": "true_false",
             "instructions": "décocher si la bière n'a pas d'ingrédient supplementaire",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "25",
@@ -375,7 +375,6 @@
             },
             "message": "ajouter un ingrédient supplémentaire",
             "default_value": 1,
-            "allow_in_bindings": 0,
             "ui": 0,
             "ui_on_text": "",
             "ui_off_text": ""
@@ -483,13 +482,13 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_6783a7650926a",
-            "label": "Qui est-il ?",
-            "name": "who",
+            "key": "field_6787ea9775ae4",
+            "label": "titre champ de texte 1",
+            "name": "who_title",
             "aria-label": "",
-            "type": "textarea",
-            "instructions": "renseigner  un texte informatif d'écrivant l'animal",
-            "required": 0,
+            "type": "text",
+            "instructions": "renseigner le titre du champ de texte 1",
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "50",
@@ -498,15 +497,54 @@
             },
             "default_value": "",
             "maxlength": "",
-            "allow_in_bindings": 1,
+            "placeholder": "qui est il ?",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6783a7650926a",
+            "label": "champ de texte 1",
+            "name": "who_text",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "renseigner un texte informatif d'écrivant l'animal",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
             "rows": 4,
             "placeholder": "",
             "new_lines": "br"
         },
         {
+            "key": "field_6787eb0875ae5",
+            "label": "titre champ de texte 2",
+            "name": "more_about_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le titre du champ de texte 2",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "qui est il ?",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6783a7bd0926b",
-            "label": "Mais c'est aussi",
-            "name": "more_about",
+            "label": "champs de texte 2",
+            "name": "more_about_text",
             "aria-label": "",
             "type": "textarea",
             "instructions": "renseigner un texte décrivant les caractéristiques de l'animal",
@@ -519,14 +557,33 @@
             },
             "default_value": "",
             "maxlength": "",
-            "allow_in_bindings": 1,
             "rows": "",
             "placeholder": "",
             "new_lines": "br"
         },
         {
+            "key": "field_6787eb0c75ae6",
+            "label": "titre champ de texte 3",
+            "name": "history_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le titre du champ de texte 3",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "qui est il ?",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6783a92f0926c",
-            "label": "En Lauzière",
+            "label": "champs de texte 3",
             "name": "history",
             "aria-label": "",
             "type": "textarea",
@@ -540,7 +597,6 @@
             },
             "default_value": "",
             "maxlength": "",
-            "allow_in_bindings": 1,
             "rows": 4,
             "placeholder": "",
             "new_lines": "br"
@@ -566,5 +622,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1736944860
+    "modified": 1736972496
 }
