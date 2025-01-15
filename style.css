@@ -741,6 +741,11 @@ main.newBiere {
             position: absolute;
             font-size: 195px;
         }
+
+        img {
+            width: 100vw;
+            height: fit-content
+        }
     }
 
     section.description {
