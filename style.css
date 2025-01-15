@@ -1032,6 +1032,7 @@ main.homeBiere {
     section.beers {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 32px;
 
         a {
