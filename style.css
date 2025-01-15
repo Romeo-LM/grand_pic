@@ -1090,8 +1090,8 @@ main.homeBiere {
 
                 img.shadow {
                     position: absolute;
-                    top: 12px;
-                    right: 64px;
+                    top: 0;
+                    right: 32px;
                     transition: all 300ms;
                 }
 
