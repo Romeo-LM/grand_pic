@@ -39,15 +39,16 @@ get_header();
 
             <?php
             for ($i = 0; $i < $nbPicto; $i++) {
+                $id = $i + 1 ;
             ?>
-                <div class="composant <?= "composant" . $i + 1 ?>">
+                <div class="composant <?= "composant" . $id ?>">
                     <div class="line"></div>
                     <div class="picto">
-                        <img src="<?php echo esc_url(get_field('picto_' . $i + 1 . '_img')); ?>" alt="pictogramme d'un composant de la bière">
+                        <img src="<?php echo esc_url(get_field('picto_' . $id . '_img')); ?>" alt="pictogramme d'un composant de la bière">
                     </div>
                     <div class="text">
-                        <h3><?php echo esc_textarea(get_field('picto_' . $i + 1 . '_title')) ?></h3>
-                        <p><?php echo esc_textarea(get_field('picto_' . $i + 1 . '_text')) ?></p>
+                        <h3><?php echo esc_textarea(get_field('picto_' . $id . '_title')) ?></h3>
+                        <p><?php echo esc_textarea(get_field('picto_' . $id . '_text')) ?></p>
                     </div>
                 </div>
             <?php
