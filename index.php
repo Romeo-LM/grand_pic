@@ -103,6 +103,44 @@ get_header();
         ?>
     </section>
 
+    <section class="engagement">
+        <div class="titre">
+            <h2>nos engagements</h2>
+            <p>Nous mettons tout en œuvre pour brasser des bières authentiques, responsables et en harmonie avec notre environnement.</p>
+        </div>
+
+        <div class="content">
+            <div class="card">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/recyclage.svg'); ?>" alt="picto recycler">
+                <p>Production durable et respect de la nature</p>
+            </div>
+
+            <div class="line"></div>
+
+
+            <div class="card">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/ecolo.svg'); ?>" alt="picto la main verte">
+                <p>Savoir-faire artisanal et tradition</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="card">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/tere.svg'); ?>" alt="picto terre">
+                <p>Soutien aux écosystèmes locaux</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="card">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/houblon_home.svg'); ?>" alt="picto terre">
+                <p>Ingrédients 100 % bio et régionaux</p>
+            </div>
+        </div>
+
+        <a href="" class="button">En savoir plus</a>
+    </section>
+
 </main>
 
 <?php get_footer(); ?>

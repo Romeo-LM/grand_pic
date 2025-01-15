@@ -1,0 +1,501 @@
+{
+    "key": "group_6786192119faf",
+    "title": "HOME",
+    "fields": [
+        {
+            "key": "field_6786729e157d8",
+            "label": "page de la bière Hero 1",
+            "name": "hero1_page",
+            "aria-label": "",
+            "type": "page_link",
+            "instructions": "renseigner la page de la bière du Hero",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "allow_archives": 1,
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_678619220a5ef",
+            "label": "Couleur principale Hero 1",
+            "name": "hero1_p_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "renseigner la couleur principal de la bière pour le Hero n°1",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_67861a1b0a5f0",
+            "label": "Couleur secondaire Hero 1",
+            "name": "hero1_s_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "renseigner la couleur secondaire de la bière pour le Hero n°1",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_67861a390a5f1",
+            "label": "nom de la bière du Hero 1",
+            "name": "hero1_beer_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le nom de de la bière du Hero 1",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "Guet apens",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67861a7a0a5f2",
+            "label": "nom de l'animal emblème du Hero 1",
+            "name": "hero1_ani_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le nom de l'animal emblème de la bière du Hero 1 (la police ne gère pas les accents)",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "lynx boréal",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67861b350a5f3",
+            "label": "mockup bière hero 1",
+            "name": "hero1_mockup",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "ajouter le mockup de la bière du Hero 1",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_67861b820a5f4",
+            "label": "image de l'animal emblème de l'Hero 1",
+            "name": "hero1_ani",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "ajouter l'image de l'animal emblème du Hero 1",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_678673ce157d9",
+            "label": "page de la bière Hero 2",
+            "name": "hero2_page",
+            "aria-label": "",
+            "type": "page_link",
+            "instructions": "renseigner la page de la bière du Hero",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "allow_archives": 1,
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_678622d1b2eea",
+            "label": "Couleur principale Hero 2",
+            "name": "hero2_p_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "renseigner la couleur principal de la bière pour le Hero n°2",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_678622d4b2eeb",
+            "label": "Couleur secondaire Hero 2",
+            "name": "hero2_s_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "renseigner la couleur secondaire de la bière pour le Hero n°2",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_678622e4b2eed",
+            "label": "nom de l'animal emblème du Hero 2",
+            "name": "hero2_ani_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le nom de l'animal emblème de la bière du Hero 2",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "lynx boréal",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_678622e0b2eec",
+            "label": "nom de la bière du Hero 2",
+            "name": "hero2_beer_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le nom de de la bière du Hero 2",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "Guet apens",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_678622ebb2eee",
+            "label": "mockup bière hero 2",
+            "name": "hero2_mockup",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "ajouter le mockup de la bière du Hero 2",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_678622f5b2eef",
+            "label": "image de l'animal emblème de l'Hero2",
+            "name": "hero2_ani",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "ajouter l'image de l'animal emblème du Hero 2",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_678673e2157da",
+            "label": "page de la bière Hero 3",
+            "name": "hero3_page_copier",
+            "aria-label": "",
+            "type": "page_link",
+            "instructions": "renseigner la page de la bière du Hero",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "allow_archives": 1,
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_678623adb2ef0",
+            "label": "Couleur principale Hero 3",
+            "name": "hero3_p_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "renseigner la couleur principal de la bière pour le Hero n°3",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_678623b0b2ef1",
+            "label": "Couleur secondaire Hero 3",
+            "name": "hero3_s_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "renseigner la couleur secondaire de la bière pour le Hero n°3",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_678623b2b2ef2",
+            "label": "nom de la bière du Hero 3",
+            "name": "hero3_beer_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le nom de de la bière du Hero 1",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "Guet apens",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_678623d3b2ef6",
+            "label": "nom de l'animal emblème du Hero 3",
+            "name": "hero3_ani_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "renseigner le nom de l'animal emblème de la bière du Hero 3",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "lynx boréal",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_678623b6b2ef3",
+            "label": "mockup bière hero 3",
+            "name": "hero3_mockup",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "ajouter le mockup de la bière du Hero 3",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_678623bbb2ef4",
+            "label": "image de l'animal emblème de l'Hero 3",
+            "name": "hero3_ani",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "ajouter l'image de l'animal emblème du Hero 3",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1736932477
+}
