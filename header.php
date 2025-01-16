@@ -24,6 +24,6 @@
         </nav>
     </header>
 
-    <a class="contact" href="">
+    <a class="contact" href="<?php echo esc_url(get_home_url() . '/contact'); ?>">
         <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/chat_bubble.svg'); ?>" alt="contacter nous">
     </a>
