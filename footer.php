@@ -1,10 +1,10 @@
 <footer>
     <div>
         <div class="footerpages">
-            <a href="<?php echo esc_url(get_home_url() . '/nosbières'); ?>">NOS BIÈRES</a>
+            <a href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>">NOS BIÈRES</a>
             <a href="<?php echo esc_url(get_home_url() . '/fabrication'); ?>">FABRICATION</a>
             <a href="<?php echo esc_url(get_home_url() . '/pour-les-pros'); ?>">POUR LES PROS</a>
-            <a href="<?php echo esc_url(get_home_url() . '/à-propos'); ?>">À PROPOS</a>
+            <a href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>">À PROPOS</a>
         </div>
 
         <div class="footercontact">

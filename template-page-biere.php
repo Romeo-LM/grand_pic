@@ -53,11 +53,11 @@ remove_filter('posts_where', 'custom_menu_order_filter');
 ?>
 <main class="homeBiere">
     <section class="filter">
-        <a href="/nos-bieres" class="<?= $all ?>"> toutes NOS BIÈRES</a>
-        <a href="/nos-bieres?f=gamme" class="<?= $gamme ?>"> bières de gamme</a>
-        <a href="/nos-bieres?f=temp" class="<?= $temp ?>">bières éphémères</a>
-        <a href="/nos-bieres?f=barique"class="<?= $barique ?>">bière en barique</a>
-        <a href="/nos-bieres?f=perso" class="<?= $perso ?>">créez vos bières</a>
+        <a href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>" class="<?= $all ?>"> toutes NOS BIÈRES</a>
+        <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=gamme'); ?>" class="<?= $gamme ?>"> bières de gamme</a>
+        <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=temp'); ?>" class="<?= $temp ?>">bières éphémères</a>
+        <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=barique'); ?>"class="<?= $barique ?>">bière en barique</a>
+        <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=perso'); ?>" class="<?= $perso ?>">créez vos bières</a>
     </section>
 
     <section class="beers">

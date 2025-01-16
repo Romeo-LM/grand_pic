@@ -990,6 +990,7 @@ main.homeBiere {
     align-items: center;
     gap: 64px;
     padding: 64px 0;
+    min-height: calc(100vh - 107px);
 
     section.filter {
         display: flex;
@@ -1395,6 +1396,10 @@ main.contact {
             width: fit-content;
         }
     }
+}
+
+main.manufacturing {
+    
 }
 
 footer {
