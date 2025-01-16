@@ -182,7 +182,7 @@ get_header();
 
             $id = $i + 1;
             ?>
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/pro' . $id .'.png'); ?>" alt="Photo Pro" class="carousel-cell">
+            <img src="<?php echo esc_url(get_field('pro_img' . $id)); ?>" alt="Photo Pro" class="carousel-cell">
             <?php
         }
         ?>
