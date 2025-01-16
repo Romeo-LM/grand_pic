@@ -12,14 +12,14 @@
         <nav>
             <div>
                 <a href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>">NOS BIÈRES</a>
-                <a href="">FABRICATION</a>
+                <a href="<?php echo esc_url(get_home_url() . '/fabrication'); ?>">FABRICATION</a>
             </div>
             <a href="<?php echo esc_url(get_home_url()); ?>">
                 <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/logo.svg'); ?>" alt="Logo brasserie mauriennaise du Grand Pip">
             </a>
             <div>
-                <a href="">POUR LES PROS</a>
-                <a href="">À PROPOS</a>
+                <a href="<?php echo esc_url(get_home_url() . '/pour-les-pros'); ?>">POUR LES PROS</a>
+                <a href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>">À PROPOS</a>
             </div>
         </nav>
     </header>

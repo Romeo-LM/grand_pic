@@ -39,7 +39,7 @@ get_header();
 
             <?php
             for ($i = 0; $i < $nbPicto; $i++) {
-                $id = $i + 1 ;
+                $id = $i + 1;
             ?>
                 <div class="composant <?= "composant" . $id ?>">
                     <div class="line"></div>
@@ -62,7 +62,10 @@ get_header();
         ?>
             <div class="moreIngredient">
                 <div class="title">
-                    <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/add.svg'); ?>" alt="pictogramme plus">
+                    <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1.5" width="25" height="25" rx="12.5" stroke="<?= $secondary?>" stroke-width="2" />
+                        <path d="M12.5714 14.9286H7V13.0714H12.5714V7.5H14.4286V13.0714H20V14.9286H14.4286V20.5H12.5714V14.9286Z" fill="<?= $secondary?>" />
+                    </svg>
                     <h3>ingrédients supplémentaires</h3>
                 </div>
                 <p><?php echo esc_textarea(get_field('more_ingredient_text')) ?></p>
@@ -81,20 +84,22 @@ get_header();
         </div>
 
         <div class="content">
-            <img src="<?php echo esc_url(get_field('emblem_img')); ?>" alt="image de l'animal emblème">
+            <div class="imgcontainer">
+                <img src="<?php echo esc_url(get_field('emblem_img')); ?>" alt="image de l'animal emblème">
+            </div>
             <div class="text">
                 <div class="who paragraph">
-                    <h3>qui est-il ?</h3>
+                    <h3><?php echo esc_textarea(get_field('who_title')) ?></h3>
                     <p><?php echo wp_kses_post(get_field('who')) ?></p>
                 </div>
                 <div class="line"></div>
                 <div class="moreAbout paragraph">
-                    <h3>mais c'est aussi ...</h3>
+                    <h3><?php echo esc_textarea(get_field('more_about_title')) ?></h3>
                     <p><?php echo wp_kses_post(get_field('more_about')) ?></p>
                 </div>
                 <div class="line"></div>
                 <div class="moreAbout paragraph">
-                    <h3>en lauzière</h3>
+                    <h3><?php echo esc_textarea(get_field('history_title')) ?></h3>
                     <p><?php echo wp_kses_post(get_field('history')) ?></p>
                 </div>
             </div>
