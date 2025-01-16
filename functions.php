@@ -5,6 +5,7 @@ function add_style()
     wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css', false);
     wp_enqueue_style('switzer-style', get_template_directory_uri() . '/src/fonts/Switzer/WEB/css/switzer.css', false);
     wp_enqueue_style('flikity', 'https://unpkg.com/flickity@2/dist/flickity.min.css', false);
+    wp_enqueue_style('Fontawasome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css', false);
 }
 add_action('wp_enqueue_scripts', 'add_style');
 
