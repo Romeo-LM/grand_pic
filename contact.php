@@ -20,8 +20,32 @@ get_header();
             echo do_shortcode('[contact-form-7 id="152" title="Contact form 1"]');
             ?>
 
-            <div class="info">
+            <div class="infos">
 
+                <a href="tel:0689064249">
+                    <div>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/tel-r.svg'); ?>"
+                            alt="tel">
+                        <p>06 - 89 - 06 - 42 - 49</p>
+                    </div>
+
+                </a>
+
+                <a href="https://maps.app.goo.gl/aWcosNCwwJccEV8NA">
+                    <div>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/map-r.svg'); ?>"
+                            alt="map">
+                        <p>80 rue des Moulins, 73220 EPIERRE</p>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/brasseriegrandpic/">
+                    <div>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/insta-r.svg'); ?>"
+                            alt="insta">
+                        <p>@brasseriegrandpic</p>
+                    </div>
+                </a>
             </div>
         </div>
 

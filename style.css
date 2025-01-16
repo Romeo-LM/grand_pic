@@ -1090,6 +1090,7 @@ main.homeBiere {
                 height: 400px;
                 width: fit-content;
                 position: absolute;
+                left: 0;
                 z-index: 3;
                 bottom: -100%;
                 transition: all 300ms;
@@ -1205,10 +1206,12 @@ main.p404 {
 }
 
 main.contact {
+    height: calc(100vh - 107px);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 32px;
+    overflow: hidden;
 
     div.title {
         text-transform: uppercase;
@@ -1233,6 +1236,8 @@ main.contact {
     }
 
     div.content {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
         position: relative;
         display: flex;
         align-items: center;
@@ -1359,11 +1364,35 @@ main.contact {
                 }
             }
 
-            div.info {}
+            div.infos {
+                width: 260px;
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 20px;
+                    line-height: 24px;
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: 32px;
+
+                        img {
+                            height: 36px;
+                        }
+                    }
+                }
+            }
         }
 
-        img {
+        >img {
+            animation: rotate 20s infinite linear;
             position: absolute;
+            top: 15vh;
+            right: -30vh;
+            z-index: -1;
+            height: 100vh;
+            width: fit-content;
         }
     }
 }
@@ -1453,7 +1482,7 @@ footer {
     }
 
     >div:nth-child(2) {
-        height: 60%;
+        height: 35%;
         display: flex;
         justify-content: center;
 
@@ -1469,13 +1498,13 @@ footer {
             color: #BCBCBC;
             font-weight: 700;
             font-size: 16px;
-            margin-top: 120px;
+            margin-top: 90px;
             color: white;
 
             >div {
                 display: flex;
                 justify-content: space-evenly;
-                margin-top: 30px;
+                margin: 30px 0;
 
                 >a {
                     color: white;
