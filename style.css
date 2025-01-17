@@ -61,7 +61,7 @@ button {
     font-family: 'Switzer-Variable';
 
     & * {
-    font-family: 'Switzer-Variable';
+        font-family: 'Switzer-Variable';
     }
 }
 
@@ -1503,6 +1503,82 @@ main.manufacturing {
                         font-size: 20px;
                         line-height: 24px;
                     }
+                }
+            }
+        }
+    }
+
+}
+
+main.pro {
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    div.title {
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 40px;
+            line-height: 44px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+
+    div.row {
+        width: -webkit-fill-available;
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 64px;
+        padding: 32px 128px 64px;
+
+        div.produit {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 320px;
+
+            div.imgcontainer {
+                width: 100%;
+                height: 180px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    height: fit-content;
+                }
+            }
+
+            div.text {
+
+                h2 {
+                    text-align: left;
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 700;
+                }
+
+                p {
+                    text-align: left;
+                    font-size: 20px;
+                    line-height: 26px;
                 }
             }
         }
