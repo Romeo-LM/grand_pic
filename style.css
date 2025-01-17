@@ -1367,6 +1367,7 @@ main.contact {
 
             div.infos {
                 width: 260px;
+
                 a {
                     text-decoration: none;
                     color: #000;
@@ -1398,9 +1399,7 @@ main.contact {
     }
 }
 
-main.manufacturing {
-    
-}
+main.manufacturing {}
 
 footer {
     height: 538px;
@@ -1520,4 +1519,247 @@ footer {
 
     }
 
+}
+
+main.apropos {
+
+    height: fit-content;
+    width: 100%;
+
+    div.aproposcat {
+        height: 221px;
+        margin: 120px 252px 150px;
+        display: flex;
+        position: relative;
+        overflow: hidden; 
+
+        >div {
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+             
+
+            >img {
+                scale: 90%;
+            }
+
+        }
+
+        >div:nth-child(1) {
+            border-right: solid 1px #d4d4d4;
+
+        }
+
+        >div:nth-child(3) {
+            border-left: solid 1px #d4d4d4;
+        }
+
+    }
+
+    div.quisommesnous1 {
+
+        display: flex;
+        flex-direction: column;
+
+        >div:nth-child(2){
+
+            margin: 0px 60px 60px 60px;
+            >h2{
+                font-weight: 700;
+                font-size: 32px;
+                margin-bottom: 60px;
+
+            }
+        }
+
+        div.quisommesnous2 {
+            height: 451px;
+            margin: 0px 60px 60px 60px;
+            display: flex;
+            justify-content: space-between;
+
+
+
+            >div {
+                width: 50%;
+
+                >h1 {
+                    font-weight: 800;
+                    font-size: 32px;
+                    margin-bottom: 48px;
+                }
+
+                >p {
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+            }
+
+            >div:nth-child(2) {
+                display: flex;
+                justify-content: flex-end;
+
+                >img {
+                    height: 80%;
+
+                }
+            }
+        }
+    }
+
+    div.nosengagements {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+
+        div.noirfondenga {
+            background-color: black;
+            color: white;
+        }
+
+        >div {
+            padding: 60px;
+        }
+
+
+        div>div.numenga {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 64px;
+
+            >h2 {
+                font-weight: 800;
+                font-size: 32px;
+                margin-bottom: 16px;
+            }
+
+            >p {
+                color: #BE1622;
+                font-weight: 800;
+                font-size: 30px;
+            }
+        }
+
+        div>div.contenuenga {
+            display: flex;
+            flex-direction: row;
+
+
+
+            div.textenga {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                >h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+
+                >p {
+                    font-size: 20px;
+                    line-height: 26px;
+                    font-weight: 300;
+                }
+            }
+
+            div.imageenga {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    div.territoire {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        >div:nth-child(2) {
+            padding: 60px 134px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            >div.contenuterritoire>div.texteterritoire {
+                width: 50%;
+            }
+
+            >div.contenuterritoire>div.imageterritoire {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        div.noirfondenga {
+            background-color: black;
+            color: white;
+            padding: 60px 134px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        >div>div.titreterritoire {
+
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 64px;
+
+            >h3 {
+                font-size: 32px;
+                font-weight: 800;
+            }
+
+            >p {
+                font-size: 26px;
+                font-weight: 700;
+            }
+        }
+
+        >div>div.contenuterritoire {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+
+            >div.imageterritoire {
+                width: 25%;
+            }
+
+            >div.texteterritoire {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 26px;
+
+                >p {
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+    }
+
+    div.desactive{
+        display: none;
+    }
+
+
+
+}
+
+.activate{
+    transform: translateY(200);
 }
