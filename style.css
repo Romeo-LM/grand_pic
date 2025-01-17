@@ -51,8 +51,18 @@ h5,
 h6,
 h7,
 p,
-a {
+a,
+span,
+button {
     font-family: 'Switzer-Variable';
+}
+
+.cky-overlay {
+    font-family: 'Switzer-Variable';
+
+    & * {
+    font-family: 'Switzer-Variable';
+    }
 }
 
 a.buttonB {
@@ -745,7 +755,7 @@ main.newBiere {
         overflow: hidden;
 
         h1 {
-            max-width: 640px;
+            max-width: 1200px;
             color: #fff;
             font-family: EDO;
             text-align: center;
@@ -896,7 +906,7 @@ main.newBiere {
                 align-items: center;
                 gap: 12px;
 
-                img {
+                svg {
                     height: 28px;
                 }
 
@@ -946,11 +956,28 @@ main.newBiere {
         }
 
         div.content {
+            width: -webkit-fill-available;
             display: flex;
             justify-content: space-between;
+            gap: 64px;
             padding-right: 64px;
 
+            div.imgcontainer {
+                width: 50%;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    bottom: 0;
+                    right: 10%;
+                    width: fit-content;
+                    height: 100%;
+                }
+            }
+
             div.text {
+                padding: 32px 0;
+                width: 50%;
                 display: flex;
                 flex-direction: column;
                 gap: 32px;
@@ -1399,7 +1426,93 @@ main.contact {
     }
 }
 
+<<<<<<< HEAD
 main.manufacturing {}
+=======
+main.manufacturing {
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    div.title {
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 40px;
+            line-height: 44px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+
+    div.row {
+        width: -webkit-fill-available;
+        height: 650vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        div.spirale {
+            top: 15%;
+            position: sticky;
+            display: flex;
+            width: 50%;
+            justify-content: center;
+
+            svg {
+                width: 80%;
+                height: fit-content;
+            }
+        }
+
+        div.text {
+            padding: 25vh 0;
+            width: 50%;
+
+            div.step {
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                div.title {
+                    width: -webkit-fill-available;
+
+                    h3 {
+                        padding-left: 40px;
+                        color: #BE1622;
+                        font-size: 24px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                }
+
+                div.explication {
+                    max-width: 560px;
+
+                    p {
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+>>>>>>> 971ce694baf18bba22ce9acf08d1bfa42620d560
 
 footer {
     height: 538px;
