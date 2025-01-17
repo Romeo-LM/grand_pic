@@ -90,12 +90,12 @@ get_header();
             <div class="text">
                 <div class="who paragraph">
                     <h3><?php echo esc_textarea(get_field('who_title')) ?></h3>
-                    <p><?php echo wp_kses_post(get_field('who')) ?></p>
+                    <p><?php echo wp_kses_post(get_field('who_text')) ?></p>
                 </div>
                 <div class="line"></div>
                 <div class="moreAbout paragraph">
                     <h3><?php echo esc_textarea(get_field('more_about_title')) ?></h3>
-                    <p><?php echo wp_kses_post(get_field('more_about')) ?></p>
+                    <p><?php echo wp_kses_post(get_field('more_about_text')) ?></p>
                 </div>
                 <div class="line"></div>
                 <div class="moreAbout paragraph">

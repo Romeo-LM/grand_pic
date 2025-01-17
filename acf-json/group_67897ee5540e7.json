@@ -1,0 +1,119 @@
+{
+    "key": "group_67897ee5540e7",
+    "title": "pour les pros",
+    "fields": [
+        {
+            "key": "field_678a044db041a",
+            "label": "Produit mise en avant",
+            "name": "nb",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "renseigner les champs pour la mise en avant de vos produits pour les professionnels",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Ajouter un élément",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_678a05bdb041b",
+                    "label": "Image du produit",
+                    "name": "prod_img",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "renseigner une image pour mettre en avant le produit",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_678a044db041a"
+                },
+                {
+                    "key": "field_678a0669b041c",
+                    "label": "Nom du produit",
+                    "name": "prod_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "renseigner le nom du produit que vous souhaitez mettre en avant",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_678a044db041a"
+                },
+                {
+                    "key": "field_678a06d7b041d",
+                    "label": "texte sur le  produit",
+                    "name": "prod_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "renseigner un texte mettant en avant produit",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_678a044db041a"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "pro.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1737099116
+}
