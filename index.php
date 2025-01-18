@@ -1,7 +1,7 @@
 <?php
 
 $nbHero = 3; //a modifier également dans le JS
-$button = ["les classiques", "les éphémères", "les personnalisées"];
+$button = [["les classiques", "gamme"], ["les éphémères", "temp"], ["les personnalisées", "perso"]];
 $beer = ["247", "temp", "perso"];
 
 get_header();
@@ -91,8 +91,8 @@ get_header();
         $j = 0;
         foreach ($button as $title) {
         ?>
-            <button type="button">
-                <h3><?= $title ?></h3>
+            <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=' . $title[1]); ?>">
+                <h3><?= $title[0] ?></h3>
                 <div class="beerAnim">
                     <?php
                     for ($i = 0; $i < 5; $i++) {
@@ -103,7 +103,7 @@ get_header();
                     }
                     ?>
                 </div>
-            </button>
+                </a>
         <?php
             $j++;
         }
@@ -144,7 +144,7 @@ get_header();
             </div>
         </div>
 
-        <a href="" class="buttonN">
+        <a href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>" class="buttonN">
             <div class="ellipse"></div>
             <p>En savoir plus</p>
         </a>
@@ -160,7 +160,7 @@ get_header();
                 <p>Pour la réalisation de ses bières uniques, la brasserie met en œuvre un savoir-faire précis et un processus de fabrication authentique à découvrir !</p>
             </div>
 
-            <a href="" class="buttonB">
+            <a href="<?php echo esc_url(get_home_url() . '/fabrication'); ?>" class="buttonB">
                 <div class="ellipse"></div>
                 <p>En savoir plus</p>
             </a>
@@ -188,7 +188,7 @@ get_header();
         ?>
         </div>
 
-        <a href="" class="buttonN">
+        <a href="<?php echo esc_url(get_home_url() . '/pour-les-pros'); ?>" class="buttonN">
             <div class="ellipse"></div>
             <p>En savoir plus</p>
         </a>

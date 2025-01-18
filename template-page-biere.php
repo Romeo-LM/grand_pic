@@ -56,7 +56,7 @@ remove_filter('posts_where', 'custom_menu_order_filter');
         <a href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>" class="<?= $all ?>"> toutes NOS BIÈRES</a>
         <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=gamme'); ?>" class="<?= $gamme ?>"> bières de gamme</a>
         <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=temp'); ?>" class="<?= $temp ?>">bières éphémères</a>
-        <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=barique'); ?>"class="<?= $barique ?>">bière en barique</a>
+        <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=barique'); ?>"class="<?= $barique ?>">bière en barrique</a>
         <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=perso'); ?>" class="<?= $perso ?>">créez vos bières</a>
     </section>
 

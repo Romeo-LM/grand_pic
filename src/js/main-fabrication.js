@@ -1,4 +1,4 @@
-let path = document.querySelector('path');
+let path = document.querySelector('path.cls-1');
 let pathLength = path.getTotalLength();
 
 path.style.strokeDasharray = pathLength + ' ' + pathLength;
