@@ -310,7 +310,7 @@ main.home {
             transition: all 300ms;
             position: absolute;
             left: calc(50vw + 100vw * var(--nb) - (var(--width) / 2));
-            transform: translateY(-50%);
+            transform: translateY(-50%) scale(1);
             z-index: 3;
             height: 80vh;
             width: fit-content;

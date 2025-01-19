@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ani = document.querySelectorAll('img.anihero');
     const tablist = document.querySelectorAll('div.tablist');
     const hero = document.querySelectorAll('div.nb1, section.heroBiere>img');
-
-    console.log(hero);
+    const scrollThreshold = window.innerHeight;
 
     const numSteps = 3;
 
@@ -110,8 +109,21 @@ document.addEventListener('DOMContentLoaded', () => {
         path: lottiePath
     });
 
-    
+    window.addEventListener('scroll', () => {
 
-    syncSelectedClass(); 
+        const scrollPosition = window.scrollY;
+
+        const scrollProgress = Math.min(scrollPosition / scrollThreshold, 1);
+
+        elements.forEach((image, index) => {
+            // Calculer les valeurs de transform proportionnellement
+            const translateY = -50 + (scrollProgress * 50); // De -50% à 0%
+            const scale = 1 - (scrollProgress * 0.2); // De 1 à 0.8
+
+            image.style.transform = `translateY(${translateY}%) scale(${scale})`;
+        });
+    });
+
+    syncSelectedClass();
     autoAdvanceMargin(hero, numSteps, 5000);
 });
