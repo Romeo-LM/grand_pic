@@ -8,6 +8,28 @@
 </head>
 
 <body>
+
+    <div class="popUp">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/logo.svg'); ?>" alt="Logo brasserie mauriennaise du Grand Pip">
+        <div class="content">
+            <p>La vente d’alcool est interdite au mineurs. Vous devez avoir 18 ans ou plus pour accéder À ce contenu</p>
+            <div class="checkbox">
+                <input type="checkbox" name="18plus" id="18plus">
+                <p>Je certifie avoir plus de 18 ans</p>
+            </div>
+            <div class="buttonsbox">
+                <button class="buttonN" href="">
+                    <div class="ellipse"></div>
+                    <p>entrer</p>
+                </button>
+                <a class="buttonN" href="https://google.com">
+                    <div class="ellipse"></div>
+                    <p>sortir</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <header>
         <nav>
             <div>

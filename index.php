@@ -30,7 +30,7 @@ get_header();
 
             $id = $i + 1;
 
-            $primary = get_field('hero' . $id. '_p_color');
+            $primary = get_field('hero' . $id . '_p_color');
             $secondary = get_field('hero' . $id . '_s_color');
 
             $field_name = 'hero' . $id . '_mockup';
@@ -96,14 +96,14 @@ get_header();
                 <div class="beerAnim">
                     <?php
                     for ($i = 0; $i < 5; $i++) {
-                    $id = $i + 1;
+                        $id = $i + 1;
                     ?>
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/beer_' . $beer[$j] . $id . '.png'); ?>" alt="" class="<?= "beerAnim" . $id ?>">
                     <?php
                     }
                     ?>
                 </div>
-                </a>
+            </a>
         <?php
             $j++;
         }
@@ -177,15 +177,15 @@ get_header();
         </div>
 
         <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 2000, "draggable": true, "pageDots": false, "prevNextButtons": false, "selectedAttraction": 0.2, "friction": 0.8 }'>
-        <?php
-        for ($i=0; $i < 5; $i++) { 
-
-            $id = $i + 1;
-            ?>
-            <img src="<?php echo esc_url(get_field('pro_img' . $id)); ?>" alt="Photo Pro" class="carousel-cell">
             <?php
-        }
-        ?>
+            for ($i = 0; $i < 5; $i++) {
+
+                $id = $i + 1;
+            ?>
+                <img src="<?php echo esc_url(get_field('pro_img' . $id)); ?>" alt="Photo Pro" class="carousel-cell">
+            <?php
+            }
+            ?>
         </div>
 
         <a href="<?php echo esc_url(get_home_url() . '/pour-les-pros'); ?>" class="buttonN">

@@ -43,6 +43,11 @@ Version: 1.0
     }
 }
 
+html {
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -145,6 +150,55 @@ a.buttonN {
 }
 
 a.buttonN:hover {
+    color: #000;
+
+    div.ellipse {
+        opacity: 1;
+        transform: scale(300);
+        z-index: 3;
+        background-color: #fff;
+    }
+
+    p {
+        position: absolute;
+        z-index: 3;
+        color: #000;
+    }
+}
+
+button.buttonN {
+    border: none;
+    overflow: hidden;
+    z-index: 0;
+    transition: all 300ms;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #000;
+
+    div.ellipse {
+        transition: all 300ms;
+        height: 1px;
+        width: 1px;
+        opacity: 0;
+        position: absolute;
+        z-index: 3;
+        background-color: rgba(244, 244, 244, 0.5);
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+button.buttonN:hover {
     color: #000;
 
     div.ellipse {
@@ -276,6 +330,61 @@ body>div.title {
     img {
         position: static;
         height: 248px;
+    }
+}
+
+.blur{
+    filter: blur(2px);
+}
+
+body>div.popUp {
+    margin-left: calc(50vw - 706px/2);
+    margin-top: calc(50vh - 341px/2);
+    position: absolute;
+    width: 640px;
+    z-index: 10000;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 24px 32px;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+    img {
+        height: 65px;
+        width: fit-content;
+    }
+
+    div.content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+        p {
+            font-size: 20px;
+            line-height: 26px;
+            text-align: center;
+        }
+
+        div.checkbox {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        div.buttonsbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 96px;
+
+            p {
+                text-transform: uppercase;
+            }
+        }
     }
 }
 
@@ -627,6 +736,7 @@ main.home {
                 gap: 32px;
 
                 img {
+                    transition: all 300ms;
                     width: 100px;
                     height: 100px;
                 }
@@ -634,6 +744,13 @@ main.home {
                 p {
                     font-size: 16px;
                     line-height: 24px;
+                }
+
+                &:hover {
+                    
+                    img {
+                        transform: translateY(-10px);
+                    }
                 }
             }
 
@@ -1472,8 +1589,8 @@ main.manufacturing {
             justify-content: center;
 
             svg {
-                width: 80%;
-                height: fit-content;
+                width: fit-content;
+                height: 80vh;
             }
         }
 
@@ -1485,13 +1602,14 @@ main.manufacturing {
                 height: 50vh;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 gap: 24px;
 
                 div.title {
                     width: -webkit-fill-available;
 
                     h3 {
-                        padding-left: 40px;
+                        text-align: center;
                         color: #BE1622;
                         font-size: 24px;
                         line-height: 32px;
@@ -1501,9 +1619,10 @@ main.manufacturing {
                 }
 
                 div.explication {
-                    max-width: 560px;
+                    max-width: 40vw;
 
                     p {
+                        text-align: center;
                         font-size: 20px;
                         line-height: 24px;
                     }
@@ -1939,4 +2058,13 @@ main.apropos {
 
 .activate{
     transform: translateY(200);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
 }
