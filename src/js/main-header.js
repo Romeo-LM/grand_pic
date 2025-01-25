@@ -3,12 +3,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const enterButton = document.querySelector('div.buttonsbox button');
     const popUp = document.querySelector('div.popUp');
     const body = document.body;
+    const mobileMenu = document.querySelector('header.mobile')
+    const menuButton = mobileMenu.querySelector('button');
 
     if (localStorage.getItem('majeur') !== 'true') {
         body.classList.add('no-scroll');
     } else {
         popUp.classList.add('hidden');
     }
+
+    menuButton.addEventListener('click',() => {
+        mobileMenu.classList.toggle('open');
+    });
 
     enterButton.addEventListener('click', () => {
 

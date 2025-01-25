@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
 </head>
@@ -30,7 +31,7 @@
         </div>
     </div>
 
-    <header>
+    <header class="pc">
         <nav>
             <div>
                 <a href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>">NOS BIÈRES</a>
@@ -43,6 +44,30 @@
                 <a href="<?php echo esc_url(get_home_url() . '/pour-les-pros'); ?>">POUR LES PROS</a>
                 <a href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>">À PROPOS</a>
             </div>
+        </nav>
+    </header>
+
+    <header class="mobile open">
+        <div class="top">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/logo.svg'); ?>" alt="Logo brasserie mauriennaise du Grand Pip">
+            <button type="button">
+                <svg class="top" width="45" height="5" viewBox="0 0 45 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.378906" width="45" height="4" rx="1" fill="#000000" />
+                </svg>
+                <svg class="middle" width="45" height="5" viewBox="0 0 45 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.378906" width="45" height="4" rx="1" fill="#BE1622" />
+                </svg>
+                <svg class="last" width="45" height="5" viewBox="0 0 45 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.378906" width="45" height="4" rx="1" fill="#000000" />
+                </svg>
+
+            </button>
+        </div>
+        <nav>
+            <a href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>">NOS BIÈRES</a>
+            <a href="<?php echo esc_url(get_home_url() . '/fabrication'); ?>">FABRICATION</a>
+            <a href="<?php echo esc_url(get_home_url() . '/pour-les-pros'); ?>">POUR LES PROS</a>
+            <a href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>">À PROPOS</a>
         </nav>
     </header>
 
