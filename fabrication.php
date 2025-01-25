@@ -7,6 +7,9 @@ get_header();
 ?>
 
 <main class="manufacturing">
+
+    <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/descendre-plus-bas-dans-la-page-405.svg'); ?>" alt="scroll-down" class="down">
+    
     <div class="title">
         <h1>Notre processus de fabrication</h1>
         <h2>DU BLé À LA MOUSSE</h2>
@@ -22,9 +25,10 @@ get_header();
                             stroke: #000;
                             stroke-miterlimit: 10;
                         }
+
                         .cls-2 {
                             fill: none;
-                            stroke: rgba(0,0,0,0.1);
+                            stroke: rgba(0, 0, 0, 0.1);
                             stroke-miterlimit: 10;
                         }
                     </style>

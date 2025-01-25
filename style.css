@@ -1548,11 +1548,19 @@ main.contact {
 }
 
 main.manufacturing {
+    position: relative;
     padding-top: 32px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    img.down {
+        position: absolute;
+        height: 100px;
+        width: fit-content;
+        top: 64vh;
+    }
 
     div.title {
 
@@ -1587,6 +1595,7 @@ main.manufacturing {
             display: flex;
             width: 50%;
             justify-content: center;
+            margin: 16px 0;
 
             svg {
                 width: fit-content;

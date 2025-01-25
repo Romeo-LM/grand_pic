@@ -1,5 +1,6 @@
 let path = document.querySelector('path.cls-1');
 let pathLength = path.getTotalLength();
+let down = document.querySelector('img.down');
 
 path.style.strokeDasharray = pathLength + ' ' + pathLength;
 path.style.strokeDashoffset = pathLength;
@@ -11,4 +12,6 @@ window.addEventListener('scroll', () => {
     scrollPercentage = Math.min(Math.max(scrollPercentage, 0), 1);
     var drawLength = pathLength * scrollPercentage;
     path.style.strokeDashoffset = Math.max(pathLength - drawLength, 0)
+
+    down.classList.toggle("hidden", window.scrollY > 0);
 });
