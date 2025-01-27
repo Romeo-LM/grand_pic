@@ -34,20 +34,29 @@
     <header class="pc">
         <nav>
             <div>
-                <a href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>">NOS BIÈRES</a>
-                <a href="<?php echo esc_url(get_home_url() . '/fabrication'); ?>">FABRICATION</a>
+                <a class="underline" href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>">NOS BIÈRES</a>
+                <a class="underline" href="<?php echo esc_url(get_home_url() . '/fabrication'); ?>">FABRICATION</a>
             </div>
             <a href="<?php echo esc_url(get_home_url()); ?>">
                 <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/logo.svg'); ?>" alt="Logo brasserie mauriennaise du Grand Pip">
             </a>
             <div>
-                <a href="<?php echo esc_url(get_home_url() . '/pour-les-pros'); ?>">POUR LES PROS</a>
-                <a href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>">À PROPOS</a>
+                <a class="underline" href="<?php echo esc_url(get_home_url() . '/pour-les-pros'); ?>">POUR LES PROS</a>
+                <a class="underline" href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>" class="about" onmouseenter="SubMenuOpen()">À PROPOS</a>
             </div>
         </nav>
+
+        <nav class="bottom" onmouseleave="SubMenuClose()">
+            <a class="underline" href="<?php echo esc_url(get_home_url() . '/contact'); ?>">Nous contacter</a>
+            <a class="underline" href="<?php echo esc_url(get_home_url() . '/a-propos#'); ?>">Nos revendeurs</a>
+            <a class="underline" href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>">Qui sommes nous</a>
+            <a class="underline" href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>">Nos engagements</a>
+            <a class="underline" href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>">Notre terriroire</a>
+        </nav>
+
     </header>
 
-    <header class="mobile open">
+    <header class="mobile">
         <div class="top">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/logo.svg'); ?>" alt="Logo brasserie mauriennaise du Grand Pip">
             <button type="button">
@@ -63,7 +72,7 @@
 
             </button>
         </div>
-        <nav>
+        <nav class="bottom">
             <a href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>">NOS BIÈRES</a>
             <a href="<?php echo esc_url(get_home_url() . '/fabrication'); ?>">FABRICATION</a>
             <a href="<?php echo esc_url(get_home_url() . '/pour-les-pros'); ?>">POUR LES PROS</a>

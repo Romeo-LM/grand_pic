@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.add('no-scroll');
     } else {
         popUp.classList.add('hidden');
-    }
+    };
 
     menuButton.addEventListener('click',() => {
         mobileMenu.classList.toggle('open');
@@ -33,3 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
         header.classList.toggle("sticky", window.scrollY > 0);
     });
 });
+
+const aboutButton = document.querySelector('a.about');
+const subMenu = document.querySelector('header.pc nav.bottom');
+
+function SubMenuOpen() {
+    subMenu.classList.add('open');
+};
+
+function SubMenuClose() {
+    subMenu.classList.remove('open');
+};
