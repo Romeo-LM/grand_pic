@@ -254,7 +254,7 @@ header.pc {
     justify-content: center;
 
     nav:first-child {
-        padding: 16px 0;
+        padding: 16px 100px;
     }
 
     nav:last-child {
@@ -277,37 +277,37 @@ header.pc {
             display: flex;
             flex-direction: row;
             gap: 32px;
+        }
 
-            a {
-                text-decoration: none;
-                display: flex;
-                justify-content: center;
-                color: #000;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 20px;
-                text-align: center;
-                position: relative;
-                overflow: hidden;
-                width: fit-content;
-                height: fit-content;
+        a.underline {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            color: #000;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            width: fit-content;
+            height: fit-content;
 
+            &::before {
+                transition: 300ms;
+                content: "";
+                position: absolute;
+                bottom: 0;
+                height: 1px;
+                width: 1px;
+                opacity: 0;
+                background-color: #4d4d4d;
+            }
+
+            &:hover {
                 &::before {
-                    transition: 300ms;
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    height: 1px;
-                    width: 1px;
-                    opacity: 0;
-                    background-color: #4d4d4d;
-                }
-
-                &:hover {
-                    &::before {
-                        opacity: 1;
-                        transform: scaleX(150);
-                    }
+                    opacity: 1;
+                    transform: scaleX(150);
                 }
             }
         }
@@ -345,7 +345,7 @@ header.sticky {
     z-index: 1000;
 
     nav:first-child {
-        padding: 0;
+        padding: 0 64px;
     }
 }
 
