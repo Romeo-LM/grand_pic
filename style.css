@@ -215,22 +215,59 @@ button.buttonN:hover {
     }
 }
 
+.bottom {
+    background-color: #fff;
+    transition: all 300ms;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: -webkit-fill-available;
+    margin: 0 16px;
+    padding: 16px 12px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    border-top: unset;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    a {
+        white-space: nowrap;
+        color: #000;
+        text-decoration: none;
+        font-weight: 600;
+        line-height: 20px;
+        font-size: 12px;
+    }
+}
+
 header.pc {
     position: sticky;
     background-color: #fff;
     width: -webkit-fill-available;
     height: fit-content;
-    padding: 16px 0;
     border-radius: 0px 0px 24px 24px;
     border-bottom: solid 1px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
 
+    nav:first-child {
+        padding: 16px 0;
+    }
+
+    nav:last-child {
+        width: unset;
+    }
+
     nav {
+        background-color: #fff;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 80px;
+        justify-content: center;
 
         img {
             height: 65px;
@@ -275,6 +312,10 @@ header.pc {
             }
         }
     }
+
+    .open {
+        transform: translateY(53px);
+    }
 }
 
 header.mobile {
@@ -301,8 +342,11 @@ a.contact:hover {
 header.sticky {
     position: sticky;
     top: 0;
-    padding: 0;
     z-index: 1000;
+
+    nav:first-child {
+        padding: 0;
+    }
 }
 
 body>div.title {
@@ -2127,35 +2171,7 @@ main.apropos {
             }
         }
 
-        nav {
-            transition: all 300ms;
-            position: absolute;
-            bottom: 0;
-            z-index: -1;
-            width: -webkit-fill-available;
-            margin: 0 16px;
-            padding: 16px 12px;
-            border: solid 1px rgba(0, 0, 0, 0.1);
-            border-top: unset;
-            border-bottom-right-radius: 12px;
-            border-bottom-left-radius: 12px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 16px;
-
-            a {
-                white-space: nowrap;
-                color: #000;
-                text-decoration: none;
-                font-weight: 600;
-                line-height: 20px;
-                font-size: 12px;
-            }
-        }
-
         &.open {
-            margin-bottom: 64px;
 
             div.top {
 
@@ -2175,7 +2191,7 @@ main.apropos {
                 }
             }
 
-            nav {
+            .bottom {
                 transform: translateY(53px);
             }
         }
