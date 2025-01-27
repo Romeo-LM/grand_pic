@@ -245,6 +245,8 @@ button.buttonN:hover {
 
 header.pc {
     position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #fff;
     width: -webkit-fill-available;
     height: fit-content;
@@ -340,12 +342,9 @@ a.contact:hover {
 }
 
 header.sticky {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 
     nav:first-child {
-        padding: 0 64px;
+        padding: 0 100px;
     }
 }
 
