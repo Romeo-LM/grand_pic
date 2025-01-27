@@ -8,18 +8,23 @@ get_header();
 
 <main class="apropos">
     <div class="aproposcat">
-        <div>
-            
+        <div class="capsules active">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/quisommesnouscaps.png'); ?>"
-                alt="capsule de bierre" class="activate">
+                alt="capsule noire" class="capsule noire">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/capsrougequisommesnous.png'); ?>"
+                alt="capsule rouge" class="capsule rouge">
         </div>
-        <div>
+        <div class="capsules1">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/nosengagementscaps.png'); ?>"
-                alt="capsule de bierre">
+                alt="capsule noire" class="capsule noire">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/capsrougenosengagement.png'); ?>"
+                alt="capsule rouge" class="capsule rouge">
         </div>
-        <div>
+        <div class="capsules2">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/territoirecaps.png'); ?>"
-                alt="capsule de bierre">
+                alt="capsule noire" class="capsule noire">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/capsrougeterritoire.png'); ?>"
+                alt="capsule rouge" class="capsule rouge">
         </div>
     </div>
     <div class="quisommesnous1">
@@ -56,7 +61,7 @@ get_header();
                 height="600"></iframe>
         </div>
     </div>
-    <div class="nosengagements ">
+    <div class="nosengagements">
         <div class="noirfondenga">
             <div class="numenga">
                 <h2>
@@ -215,7 +220,7 @@ get_header();
 
 
     </div>
-    <div class="territoire ">
+    <div class="territoire">
         <div class="noirfondenga">
             <div class="titreterritoire">
                 <h3>LE MASSIF DE LA LAUZIÈRE</h3>
@@ -278,6 +283,52 @@ get_header();
     </div>
 
 </main>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const capsules = document.querySelectorAll(".capsules, .capsules1, .capsules2");
+        const quisommesnous = document.querySelector('.quisommesnous1');
+        const nosengagements = document.querySelector('.nosengagements');
+        const territoire = document.querySelector('.territoire');
+        
+
+
+        capsules.forEach(capsule => {
+            capsule.addEventListener("click", () => {
+                // Retirer la classe "active" de toutes les capsules
+                capsules.forEach(c => c.classList.remove("active"));
+                // Ajouter la classe "active" uniquement à l'élément cliqué
+                capsule.classList.add("active");
+
+                if (capsule.classList.contains("capsules")) {
+                    // Ajouter la classe "desactivate" à la div "sommes-nous"
+                    quisommesnous.classList.remove("desactive");
+                    nosengagements.classList.add("desactive");
+                    territoire.classList.add("desactive");
+                }
+
+                if (capsule.classList.contains("capsules1")) {
+                    // Ajouter la classe "desactivate" à la div "sommes-nous"
+                    quisommesnous.classList.add("desactive");
+                    nosengagements.classList.remove("desactive");
+                    territoire.classList.add("desactive");
+                }
+
+                if (capsule.classList.contains("capsules2")) {
+                    // Ajouter la classe "desactivate" à la div "sommes-nous"
+                    quisommesnous.classList.add("desactive");
+                    nosengagements.classList.add("desactive");
+                    territoire.classList.remove("desactive");
+                }
+                
+
+            
+            });
+
+        });
+
+    });
+
+</script>
 
 <?php
 get_footer();

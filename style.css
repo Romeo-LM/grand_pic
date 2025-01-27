@@ -1857,16 +1857,90 @@ main.apropos {
         position: relative;
         overflow: hidden;
 
-        >div {
-            width: 33%;
+        .capsules {
+            position: relative;
+            width: 33%; /* Ajustez selon vos images */
+            height: 200px; /* Ajustez selon vos images */
+            overflow: hidden;
             display: flex;
             justify-content: center;
+        }
+        
+        .capsules1 {
+            position: relative;
+            width: 33%; /* Ajustez selon vos images */
+            height: 200px; /* Ajustez selon vos images */
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .capsules2 {
+            position: relative;
+            width: 33%; /* Ajustez selon vos images */
+            height: 200px; /* Ajustez selon vos images */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        
 
-            >img {
-                scale: 90%;
-            }
+        .capsule {
+            margin: auto;
+            position: absolute;
+            
+            height: 100%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+        
+        /* État initial : seule la capsule noire est visible */
+        .capsule.noire {
+            transform: translateY(0);
+            z-index: 2;
+           
+        }
+        
+        .capsule.rouge {
+            transform: translateY(-100%);
+            z-index: 1;
+            opacity: 0; /* Invisible au départ */
+        }
+        
+        /* État actif après clic */
+        .capsules.active .capsule.noire {
+            transform: translateY(100%);
+            opacity: 0;
+            z-index: 1;
+        }
 
+        .capsules1.active .capsule.noire {
+            transform: translateY(100%);
+            opacity: 0;
+            z-index: 1;
+        }
+
+        .capsules2.active .capsule.noire {
+            transform: translateY(100%);
+            opacity: 0;
+            z-index: 1;
+        }
+        
+        .capsules.active .capsule.rouge {
+            transform: translateY(0);
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .capsules1.active .capsule.rouge {
+            transform: translateY(0);
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .capsules2.active .capsule.rouge {
+            transform: translateY(0);
+            opacity: 1;
+            z-index: 2;
         }
 
         >div:nth-child(1) {
@@ -2071,10 +2145,6 @@ main.apropos {
     div.desactive {
         display: none;
     }
-}
-
-.activate {
-    transform: translateY(200);
 }
 
 .hidden {
