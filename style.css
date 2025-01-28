@@ -2206,7 +2206,6 @@ main.apropos {
     }
 
     header.mobile {
-        padding-top: 48px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2217,7 +2216,7 @@ main.apropos {
             background-color: #fff;
             border-bottom: solid 1px rgba(0, 0, 0, 0.1);
             width: -webkit-fill-available;
-            padding: 0 32px 16px;
+            padding: 48px 32px 16px;
             display: flex;
             justify-content: space-between;
 
@@ -2261,7 +2260,7 @@ main.apropos {
             }
 
             .bottom {
-                transform: translateY(53px);
+                transform: translateY(52px);
             }
         }
     }
@@ -2274,7 +2273,7 @@ main.apropos {
             margin-bottom: 100px;
 
             nav {
-                transform: translateY(89px);
+                transform: translateY(137px);
             }
         }
     }
