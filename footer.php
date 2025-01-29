@@ -50,12 +50,10 @@
     </div>
 
     <div class="legal">
+        <p>L’ABUS DE L’ALCOOL EST DANGEREUX POUR LA SANTÉ. À CONSOMMER AVEC MODÉRATION</p>
         <div>
-            <p>L’ABUS DE L’ALCOOL EST DANGEREUX POUR LA SANTÉ. À CONSOMMER AVEC MODÉRATION</p>
-            <div>
-                <p>© 2025 - BRASSERIE DU GRAND PIC </p>
-                <a href="">MENTIONS LÉGALES </a>
-            </div>
+            <p>© 2025 - BRASSERIE DU GRAND PIC </p>
+            <a href="">MENTIONS LÉGALES </a>
         </div>
     </div>
 
