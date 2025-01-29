@@ -283,52 +283,6 @@ get_header();
     </div>
 
 </main>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const capsules = document.querySelectorAll(".capsules, .capsules1, .capsules2");
-        const quisommesnous = document.querySelector('.quisommesnous1');
-        const nosengagements = document.querySelector('.nosengagements');
-        const territoire = document.querySelector('.territoire');
-        
-
-
-        capsules.forEach(capsule => {
-            capsule.addEventListener("click", () => {
-                // Retirer la classe "active" de toutes les capsules
-                capsules.forEach(c => c.classList.remove("active"));
-                // Ajouter la classe "active" uniquement à l'élément cliqué
-                capsule.classList.add("active");
-
-                if (capsule.classList.contains("capsules")) {
-                    // Ajouter la classe "desactivate" à la div "sommes-nous"
-                    quisommesnous.classList.remove("desactive");
-                    nosengagements.classList.add("desactive");
-                    territoire.classList.add("desactive");
-                }
-
-                if (capsule.classList.contains("capsules1")) {
-                    // Ajouter la classe "desactivate" à la div "sommes-nous"
-                    quisommesnous.classList.add("desactive");
-                    nosengagements.classList.remove("desactive");
-                    territoire.classList.add("desactive");
-                }
-
-                if (capsule.classList.contains("capsules2")) {
-                    // Ajouter la classe "desactivate" à la div "sommes-nous"
-                    quisommesnous.classList.add("desactive");
-                    nosengagements.classList.add("desactive");
-                    territoire.classList.remove("desactive");
-                }
-                
-
-            
-            });
-
-        });
-
-    });
-
-</script>
 
 <?php
 get_footer();

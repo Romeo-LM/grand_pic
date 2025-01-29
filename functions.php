@@ -21,6 +21,10 @@ function add_script()
         wp_enqueue_script('new_beer-js', get_template_directory_uri() . '/src/js/main-new-beer.js', array(), false, true);
     }
 
+    if (is_page('a propos')) {
+        wp_enqueue_script('a_propos-js', get_template_directory_uri() . '/src/js/main-apropos.js', array(), false, true);
+    }
+
     if ( is_front_page()) {
         wp_enqueue_script('index-js', get_template_directory_uri() . '/src/js/main-index.js', array(), false, true);
         wp_enqueue_script('lotties-js', "https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js", array(), false, true);

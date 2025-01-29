@@ -1,5 +1,11 @@
 <footer>
-    <div>
+
+    <a href="<?php echo esc_url(get_home_url()); ?>">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/logowhite.svg'); ?>"
+            alt="Logo brasserie mauriennaise du Grand Pic">
+    </a>
+
+    <div class="content">
         <div class="footerpages">
             <a href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>">NOS BIÈRES</a>
             <a href="<?php echo esc_url(get_home_url() . '/fabrication'); ?>">FABRICATION</a>
@@ -8,10 +14,7 @@
         </div>
 
         <div class="footercontact">
-            <a href="/">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/logowhite.svg'); ?>"
-                    alt="Logo brasserie mauriennaise du Grand Pic">
-            </a>
+
             <a href="tel:0689064249">
                 <div>
                     <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/phone.svg'); ?>"
@@ -45,7 +48,8 @@
 
         </div>
     </div>
-    <div>
+
+    <div class="legal">
         <div>
             <p>L’ABUS DE L’ALCOOL EST DANGEREUX POUR LA SANTÉ. À CONSOMMER AVEC MODÉRATION</p>
             <div>
@@ -54,6 +58,7 @@
             </div>
         </div>
     </div>
+
 </footer>
 
 <?php wp_footer(); ?>
