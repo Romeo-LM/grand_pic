@@ -24,7 +24,7 @@
 
             </a>
             <a href="https://maps.app.goo.gl/aWcosNCwwJccEV8NA">
-                <div>
+                <div class="maps">
                     <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/map.svg'); ?>"
                         alt="Logo brasserie mauriennaise du Grand Pic">
                     <p>80 rue des Moulins, 73220 EPIERRE</p>
