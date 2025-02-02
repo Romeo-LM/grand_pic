@@ -2309,6 +2309,29 @@ main.apropos {
         }
     }
 
+    main.p404 {
+        justify-content: center;
+        align-items: unset;
+        padding-left: unset;
+        padding-top: 20%;
+    
+        div.content {
+            align-items: center;
+            gap: 32px;
+    
+            div.title {
+                text-align: center;
+            }
+        }
+    
+        img {
+            height: 100vh;
+            top: unset;
+            right: unset;
+            bottom: -25vh;
+        }
+    }
+
     body>div.title {
         top: 400px;
 
