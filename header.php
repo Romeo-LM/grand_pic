@@ -58,7 +58,9 @@
 
     <header class="mobile">
         <div class="top">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/logo.svg'); ?>" alt="Logo brasserie mauriennaise du Grand Pip">
+            <a href="<?php echo esc_url(get_home_url()); ?>">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/logo.svg'); ?>" alt="Logo brasserie mauriennaise du Grand Pip">
+            </a>
             <button type="button">
                 <svg class="top" width="45" height="5" viewBox="0 0 45 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.378906" width="45" height="4" rx="1" fill="#000000" />
