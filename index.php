@@ -75,7 +75,7 @@ get_header();
                 </a>
 
                 <div class="more">
-                    <a href="/nos-biere">
+                    <a href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>">
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/plus.svg'); ?>" alt="more">
                         <span>Découvrir toute la gamme</span>
                     </a>
