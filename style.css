@@ -2215,7 +2215,7 @@ main.apropos {
             background-color: #fff;
             border-bottom: solid 1px rgba(0, 0, 0, 0.1);
             width: -webkit-fill-available;
-            padding: 8px 32px 16px;
+            padding: 16px 32px;
             display: flex;
             justify-content: space-between;
 
@@ -2373,6 +2373,22 @@ main.apropos {
                 a.buttonB {
                     z-index: 1;
                 }
+
+                div.more {
+                    bottom: 16px;
+                    left: 16px;
+    
+                    a {
+                        padding: 4px;
+                        width: 32px;
+                        height: 32px;
+    
+                        img {
+                            left: 8px;
+                            width: 24px;
+                        }
+                    }
+                }
             }
         }
 
@@ -2484,7 +2500,7 @@ main.apropos {
     
             h1 {
                 max-width: 90%;
-                font-size: 120px;
+                font-size: 90px;
             }
     
             img {
