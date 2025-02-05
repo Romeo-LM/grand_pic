@@ -988,8 +988,7 @@ main.newBiere {
 
             div.composant {
                 --width: 0px;
-                max-width: 33vw;
-                height: 80px;
+                width: 45vw;
                 position: absolute;
                 display: flex;
                 align-items: center;
@@ -998,8 +997,8 @@ main.newBiere {
 
                 div.line {
                     height: 1px;
-                    width: 200px;
-                    min-width: 200px;
+                    width: 30%;
+                    min-width: 124px;
                     background-color: #fff;
                 }
 
@@ -1039,20 +1038,20 @@ main.newBiere {
             div.composant2 {
                 text-align: right;
                 flex-direction: row-reverse;
-                top: 88px;
+                top: 100px;
                 right: calc(32px + var(--width) / 2);
             }
 
             div.composant3 {
                 text-align: left;
-                top: 164px;
+                top: 200px;
                 left: calc(32px + var(--width) / 2);
             }
 
             div.composant4 {
                 text-align: right;
                 flex-direction: row-reverse;
-                top: 276px;
+                top: 300px;
                 right: calc(32px + var(--width) / 2);
             }
 
@@ -2349,7 +2348,7 @@ main.apropos {
     main.home {
 
         section.hero {
-            height: calc(100dvh - 97px);
+            height: calc(100vh - 97px);
 
             img {
                 height: 50%;
@@ -2478,16 +2477,220 @@ main.apropos {
             }
         }
     }
+
+    main.newBiere {
+
+        section.hero {
+    
+            h1 {
+                max-width: 90%;
+                font-size: 120px;
+            }
+    
+            img {
+                width: fit-content;
+                height: 100vh
+            }
+        }
+    
+        section.description {
+            gap: 80px;
+            padding: 80px 0;
+    
+            h2 {
+                font-size: 40px;
+            }
+    
+            div.beerPicto {
+                width: 100%;
+                overflow: hidden;
+    
+                .image-container {
+                    left: 50%;
+                }
+    
+                div.composant {
+                    max-width: unset;
+                    width: 80%;
+                    left: unset;
+                    right: 0;
+    
+                    div.line {
+                        width: 30%;
+                        min-width: 80px;
+                    }
+    
+                    div.picto {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        img {
+                            height: 60px;
+                            width: 60px;
+                        }
+                    }
+    
+                    div.text {
+                        height: 80px;
+                        min-width: 48vw;
+                        text-align: right;
+    
+                        h3 {
+                            font-size: 20px;
+                        }
+    
+                        p {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                    }
+                }
+                
+                div.composant1 {
+                    flex-direction: row-reverse;
+                }
+
+                div.composant2 {
+                    text-align: left;
+                    flex-direction: row-reverse;
+                }
+
+                div.composant3 {
+                    flex-direction: row-reverse;
+                }
+    
+                div.composant4 {
+                    text-align: left;
+                    flex-direction: row-reverse;
+                }
+    
+            }
+    
+            div.moreIngredient {
+    
+                div.title {
+    
+                    svg {
+                        height: 24px;
+                    }
+    
+                    h3 {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+    
+                }
+    
+                p {
+                    width: 80%;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    
+        section.emblem {
+            padding-top: 32px;
+    
+            div.title {
+    
+                h2 {
+                    font-size: 40px;
+                    line-height: 44px;
+                    -webkit-text-stroke: 2px var(--secondary);
+                }
+    
+                p {
+                    font-size: 40px;
+                    line-height: 44px;
+                }
+            }
+    
+            div.content {
+                padding-right: unset;
+                flex-direction: column-reverse;
+                align-items: center;
+    
+                div.imgcontainer {
+                    width: unset;
+                    position: static;
+    
+                    img {
+                        position: static;
+                        width: 100vw;
+                        height: fit-content;
+                    }
+                }
+    
+                div.text {
+                    padding: 32px 0;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
+    
+                    div.line {
+                        height: 1px;
+                        width: -webkit-fill-availble;
+                        background-color: rgba(0, 0, 0, 0.1);
+                    }
+    
+                    div.paragraph {
+    
+                        h3 {
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+    
+                        p {
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    main.newBiere {
+    
+        section.description {
+    
+            div.beerPicto {
+    
+                div.composant {
+                    gap: 12px;
+
+                    div.text {
+                        height: 80px;
+                        min-width: 48vw;
+                        text-align: right;
+    
+                        h3 {
+                            font-size: 16px;
+                        }
+    
+                        p {
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 397px) {
     header.mobile {
 
         &.open {
-            margin-bottom: 100px;
 
-            nav {
-                transform: translateY(137px);
+            .bottom {
+                transform: translateY(89px);
             }
         }
     }
