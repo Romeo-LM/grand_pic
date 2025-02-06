@@ -2374,33 +2374,33 @@ main.apropos {
         gap: 16px;
         padding: 12px 16px;
         border-radius: 24px;
-    
+
         img {
             height: 65px;
             width: fit-content;
         }
-    
+
         div.content {
             gap: 8px;
             width: 100%;
-    
+
             p {
                 font-size: 12px;
                 line-height: 16px;
             }
-    
+
             div.checkbox {
                 display: flex;
                 gap: 12px;
                 align-items: center;
             }
-    
+
             div.buttonsbox {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 24px;
-    
+
                 p {
                     text-transform: uppercase;
                 }
@@ -2612,87 +2612,87 @@ main.apropos {
         gap: 32px;
         padding: 32px 0;
         min-height: calc(100vh - 107px);
-    
+
         section.filter {
             flex-wrap: wrap;
             gap: 16px;
-    
+
             a {
                 font-size: 12px;
                 line-height: 16px;
             }
         }
-    
+
         section.beers {
             gap: 32px;
-    
+
             a {
 
                 width: 320px;
                 height: 476px;
-    
+
                 img.beer {
                     top: 32px;
                     height: 320px;
                 }
-    
+
                 svg.gouteG {
                     width: 64px;
                     left: 64px;
                     bottom: 320px;
                 }
-    
+
                 svg.gouteD {
                     width: 64px;
                     left: 210px;
                     bottom: 180px;
                 }
-    
+
                 img.beast {
                     height: 320px;
                     bottom: -100%;
                 }
-    
+
                 div.name {
                     text-align: center;
-    
+
                     img.shadow {
                         transform: scale(0.8);
                     }
-    
+
                     h2 {
                         font-size: 32px;
                         line-height: 38px;
                     }
-    
+
                     h3 {
                         font-size: 14px;
                         line-height: 18px;
                     }
                 }
             }
-    
+
             a:hover {
-    
+
                 img.beer {
                     transform: scale(0.8);
                 }
-    
+
                 img.beast {
                     transform: translate(0, -164%);
                 }
-    
+
                 div.name {
-    
+
                     img.shadow {
                         transform: scale(0.6) translate(0, -56px);
                     }
-    
+
                     h2 {
                         font-size: 14px;
                         line-height: 18px;
                     }
-    
+
                     h3 {
                         font-size: 32px;
                         line-height: 38px;
@@ -2901,8 +2901,8 @@ main.apropos {
 
             div.produit {
                 gap: 20px;
-                s
-                div.text {
+
+                s div.text {
 
                     h2 {
                         font-size: 20px;
@@ -2923,53 +2923,53 @@ main.apropos {
         padding: 32px 0;
         height: unset;
         gap: 32px;
-    
+
         div.title {
-    
+
             h1 {
                 font-size: 24px;
                 line-height: 28px;
             }
-    
+
             h2 {
                 font-size: 16px;
                 line-height: 20px;
             }
         }
-    
+
         div.content {
             height: unset;
-    
+
             div.row {
                 width: 100vw;
                 flex-direction: column;
                 align-items: center;
                 gap: 16px;
-    
+
                 div.wpcf7 {
-    
+
                     form.wpcf7-form {
                         align-items: center;
                         width: 320px;
-    
+
                         div.name {
                             gap: 32px;
-    
+
                             div.field {
                                 width: 144px;
-    
+
                                 input {
                                     width: -webkit-fill-available;
                                 }
                             }
                         }
-    
+
                         div.field {
                             display: flex;
                             align-items: center;
                             position: relative;
                             height: 40px;
-    
+
                             &:focus-within label {
                                 top: -8px;
                                 left: 12px;
@@ -2978,7 +2978,7 @@ main.apropos {
                                 background-color: #fff;
                                 padding: 0 8px;
                             }
-    
+
                             span {
                                 font-family: 'Switzer-Variable';
                                 font-size: 10px;
@@ -2986,7 +2986,7 @@ main.apropos {
                                 padding-left: 8px;
                                 width: -webkit-fill-available;
                             }
-    
+
                             label {
                                 transition: all 300ms;
                                 font-family: 'Switzer-Variable';
@@ -2996,7 +2996,7 @@ main.apropos {
                                 z-index: -1;
                                 color: #9b9b9b;
                             }
-    
+
                             input {
                                 background-color: transparent;
                                 padding: 8px;
@@ -3006,21 +3006,21 @@ main.apropos {
                                 border-bottom: solid 1px #000;
                             }
                         }
-    
+
                         div.field.textarea {
                             height: 256px;
                             width: 320px;
-    
+
                             &:focus-within label {
                                 top: -8px;
                                 left: 12px;
                             }
-    
+
                             label {
                                 left: 8px;
                                 top: 8px;
                             }
-    
+
                             textarea {
                                 background-color: transparent;
                                 height: 240px;
@@ -3031,7 +3031,7 @@ main.apropos {
                                 resize: none;
                             }
                         }
-    
+
                         input[type="submit"] {
                             border: none;
                             overflow: hidden;
@@ -3049,8 +3049,8 @@ main.apropos {
                             background-color: #000;
                             font-size: 18px;
                             line-height: 24px;
-    
-    
+
+
                             &:hover {
                                 color: #000;
                                 background-color: #fff;
@@ -3059,7 +3059,7 @@ main.apropos {
                         }
                     }
                 }
-    
+
                 div.infos {
                     display: flex;
                     flex-direction: column;
@@ -3067,11 +3067,94 @@ main.apropos {
 
                 }
             }
-    
+
             >img {
                 display: none;
             }
         }
+    }
+
+    main.manufacturing {
+        padding-top: 32px;
+
+        img.down {
+            position: absolute;
+            height: 5vh;
+            width: fit-content;
+            top: 70dvh;
+        }
+
+        > div.title {
+            position: relative;
+            z-index: 10;
+
+            h1 {
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 800;
+            }
+
+            h2 {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        div.row {
+            flex-direction: column;
+            align-items: center;
+
+            div.spirale {
+                background-color: #fff;
+                top: 0;
+                align-items: center;
+                width: calc(100% - 48px);
+                padding: 0 24px;
+                justify-content: center;
+                margin: 16px 0;
+                height: 50vh;
+                border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+
+                svg {
+                    width: fit-content;
+                    height: 80vh;
+                }
+            }
+
+            div.text {
+                padding: unset;
+                width: 100% ;
+
+                div.step {
+                    height: 50vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 12px;
+
+                    div.title {
+                        width: -webkit-fill-available;
+
+                        h3 {
+                            font-size: 20px;
+                            line-height: 24px;
+
+                        }
+                    }
+
+                    div.explication {
+                        padding: 0 12px;
+                        max-width: unset;
+
+                        p {
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
 
