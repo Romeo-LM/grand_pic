@@ -2869,7 +2869,8 @@ main.apropos {
     }
 
     main.contact {
-        padding-top: 32px;
+        padding: 32px 0;
+        height: unset;
     
         div.title {
     
