@@ -8,19 +8,19 @@ get_header();
 
 <main class="apropos">
     <div class="aproposcat">
-        <div class="capsules active">
+        <div class="capsules quiSommesNousCap active">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/quisommesnouscaps.png'); ?>"
                 alt="capsule noire" class="capsule noire">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/capsrougequisommesnous.png'); ?>"
                 alt="capsule rouge" class="capsule rouge">
         </div>
-        <div class="capsules1">
+        <div class="capsules engagementsCap">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/nosengagementscaps.png'); ?>"
                 alt="capsule noire" class="capsule noire">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/capsrougenosengagement.png'); ?>"
                 alt="capsule rouge" class="capsule rouge">
         </div>
-        <div class="capsules2">
+        <div class="capsules territoireCap">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/territoirecaps.png'); ?>"
                 alt="capsule noire" class="capsule noire">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/capsrougeterritoire.png'); ?>"
@@ -50,10 +50,10 @@ get_header();
                     Rejoignez-nous dans cette aventure, et dégustez le goût de la passion brassée en altitude !
                 </p>
             </div>
-            <div>
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/createurbrasserie.png'); ?>"
-                    alt="Logo brasserie mauriennaise du Grand Pic">
-            </div>
+
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/createurbrasserie.png'); ?>"
+                alt="Logo brasserie mauriennaise du Grand Pic">
+
         </div>
         <div>
             <h2>RETROUVEZ NOS BIÈRES PRÈS DE CHEZ VOUS</h2>
@@ -77,7 +77,7 @@ get_header();
                         alt="Logo brasserie mauriennaise du Grand Pic">
                 </div>
                 <div class="textenga">
-                    <h3>Notre environnement, notre adn</h3>
+                    <h3>Notre environnement, notre ADN</h3>
                     <p>Respecter notre environnement et en prendre soin fait partie de notre ADN. C’est pourquoi nos
                         bières sont composées uniquement de malts locaux et issus de l’agriculture biologique.</p>
                     <p>Nous visons à moyen terme de produire une partie de nos propres céréales et houblons sur nos
