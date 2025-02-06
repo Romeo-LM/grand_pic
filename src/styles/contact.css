@@ -1,0 +1,350 @@
+main.contact {
+    height: calc(100vh - 107px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    overflow: hidden;
+
+    div.title {
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+
+    div.content {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div.row {
+            width: 864px;
+            display: flex;
+            justify-content: space-between;
+
+            div.wpcf7 {
+
+                form.wpcf7-form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+
+                    div.name {
+                        display: flex;
+                        gap: 32px;
+
+                        div.field {
+                            width: 248px;
+
+                            input {
+                                width: 232px;
+                            }
+                        }
+                    }
+
+                    div.field {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        height: 40px;
+
+                        &:focus-within label {
+                            top: -8px;
+                            left: 12px;
+                            font-size: 12px;
+                            z-index: 2;
+                            background-color: #fff;
+                            padding: 0 8px;
+                        }
+
+                        span {
+                            font-family: 'Switzer-Variable';
+                            font-size: 10px;
+                            line-height: 12px;
+                            padding-left: 8px;
+                        }
+
+                        label {
+                            transition: all 300ms;
+                            font-family: 'Switzer-Variable';
+                            text-transform: uppercase;
+                            position: absolute;
+                            left: 8px;
+                            z-index: -1;
+                            color: #9b9b9b;
+                        }
+
+                        input {
+                            background-color: transparent;
+                            padding: 8px;
+                            height: 24px;
+                            width: 512px;
+                            border: unset;
+                            border-bottom: solid 1px #000;
+                        }
+                    }
+
+                    div.field.textarea {
+                        height: 256px;
+                        width: 528px;
+                        align-items: flex-start;
+
+                        &:focus-within label {
+                            top: -8px;
+                            left: 12px;
+                        }
+
+                        label {
+                            left: 8px;
+                            top: 8px;
+                        }
+
+                        textarea {
+                            background-color: transparent;
+                            height: 240px;
+                            width: 512px;
+                            padding: 8px;
+                            border: unset;
+                            border-bottom: solid 1px #000;
+                            resize: none;
+                        }
+                    }
+
+                    input[type="submit"] {
+                        border: none;
+                        overflow: hidden;
+                        z-index: 0;
+                        transition: all 300ms;
+                        text-decoration: none;
+                        color: #fff;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 200px;
+                        height: 60px;
+                        border-radius: 60px;
+                        background-color: #000;
+                        font-size: 18px;
+                        line-height: 24px;
+
+
+                        &:hover {
+                            color: #000;
+                            background-color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            div.infos {
+                width: 260px;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 20px;
+                    line-height: 24px;
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: 32px;
+
+                        img {
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+        }
+
+        >img {
+            animation: rotate 20s infinite linear;
+            position: absolute;
+            top: 15vh;
+            right: -30vh;
+            z-index: -1;
+            height: 100vh;
+            width: fit-content;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+
+    main.contact {
+        padding: 32px 0;
+        height: unset;
+        gap: 32px;
+
+        div.title {
+
+            h1 {
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            h2 {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        div.content {
+            height: unset;
+
+            div.row {
+                width: 100vw;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+
+                div.wpcf7 {
+
+                    form.wpcf7-form {
+                        align-items: center;
+                        width: 320px;
+
+                        div.name {
+                            gap: 32px;
+
+                            div.field {
+                                width: 144px;
+
+                                input {
+                                    width: -webkit-fill-available;
+                                }
+                            }
+                        }
+
+                        div.field {
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            height: 40px;
+
+                            &:focus-within label {
+                                top: -8px;
+                                left: 12px;
+                                font-size: 12px;
+                                z-index: 2;
+                                background-color: #fff;
+                                padding: 0 8px;
+                            }
+
+                            span {
+                                font-family: 'Switzer-Variable';
+                                font-size: 10px;
+                                line-height: 12px;
+                                padding-left: 8px;
+                                width: -webkit-fill-available;
+                            }
+
+                            label {
+                                transition: all 300ms;
+                                font-family: 'Switzer-Variable';
+                                text-transform: uppercase;
+                                position: absolute;
+                                left: 8px;
+                                z-index: -1;
+                                color: #9b9b9b;
+                            }
+
+                            input {
+                                background-color: transparent;
+                                padding: 8px;
+                                height: 24px;
+                                width: 304px;
+                                border: unset;
+                                border-bottom: solid 1px #000;
+                            }
+                        }
+
+                        div.field.textarea {
+                            height: 256px;
+                            width: 320px;
+
+                            &:focus-within label {
+                                top: -8px;
+                                left: 12px;
+                            }
+
+                            label {
+                                left: 8px;
+                                top: 8px;
+                            }
+
+                            textarea {
+                                background-color: transparent;
+                                height: 240px;
+                                width: 304px;
+                                padding: 8px;
+                                border: unset;
+                                border-bottom: solid 1px #000;
+                                resize: none;
+                            }
+                        }
+
+                        input[type="submit"] {
+                            border: none;
+                            overflow: hidden;
+                            z-index: 0;
+                            transition: all 300ms;
+                            text-decoration: none;
+                            color: #fff;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 200px;
+                            height: 60px;
+                            border-radius: 60px;
+                            background-color: #000;
+                            font-size: 18px;
+                            line-height: 24px;
+
+
+                            &:hover {
+                                color: #000;
+                                background-color: #fff;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                div.infos {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                }
+            }
+
+            >img {
+                display: none;
+            }
+        }
+    }
+}
