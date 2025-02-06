@@ -2221,8 +2221,18 @@ main.apropos {
         }
     }
 
-
     a.buttonN {
+        width: 124px;
+        height: 48px;
+        border-radius: 24px;
+
+        p {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    button.buttonN {
         width: 124px;
         height: 48px;
         border-radius: 24px;
@@ -2353,6 +2363,47 @@ main.apropos {
             a {
                 font-size: 12px;
                 line-height: 16px;
+            }
+        }
+    }
+
+    body>div.popUp {
+        margin-left: calc(50vw - 314px/2);
+        margin-top: calc(50vh - 238px/2);
+        width: 280px;
+        gap: 16px;
+        padding: 12px 16px;
+        border-radius: 24px;
+    
+        img {
+            height: 65px;
+            width: fit-content;
+        }
+    
+        div.content {
+            gap: 8px;
+            width: 100%;
+    
+            p {
+                font-size: 12px;
+                line-height: 16px;
+            }
+    
+            div.checkbox {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+            }
+    
+            div.buttonsbox {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 24px;
+    
+                p {
+                    text-transform: uppercase;
+                }
             }
         }
     }
