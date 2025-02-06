@@ -2251,7 +2251,8 @@ main.apropos {
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
+        position: sticky;
+        top: 0;
         z-index: 1000;
 
         div.top {
@@ -3106,7 +3107,7 @@ main.apropos {
 
             div.spirale {
                 background-color: #fff;
-                top: 0;
+                top: 83px;
                 align-items: center;
                 width: calc(100% - 48px);
                 padding: 0 24px;
