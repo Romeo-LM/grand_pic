@@ -2871,6 +2871,7 @@ main.apropos {
     main.contact {
         padding: 32px 0;
         height: unset;
+        gap: 32px;
     
         div.title {
     
