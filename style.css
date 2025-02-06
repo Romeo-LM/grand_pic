@@ -2885,6 +2885,7 @@ main.apropos {
         }
     
         div.content {
+            height: unset;
     
             div.row {
                 width: 100vw;
