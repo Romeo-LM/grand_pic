@@ -26,6 +26,7 @@ get_header();
     <section class="hero">
         <img src="<?php echo esc_url(get_field('hero_img')); ?>" alt="<?= "hero bière" . the_title(); ?>">
         <h1><?php the_title(); ?></h1>
+        <a href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>">← Retour à la sélection</a>
     </section>
 
     <section class="description">
