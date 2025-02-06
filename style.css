@@ -3244,6 +3244,7 @@ main.apropos {
             div>div.contenuenga {
                 display: flex;
                 flex-direction: column-reverse;
+                gap: 16px;
 
                 div.textenga {
                     width: 100%;
