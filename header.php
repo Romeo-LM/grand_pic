@@ -48,10 +48,10 @@
 
         <nav class="bottom" onmouseleave="SubMenuClose()">
             <a class="underline" href="<?php echo esc_url(get_home_url() . '/contact'); ?>">Nous contacter</a>
-            <a class="underline" href="<?php echo esc_url(get_home_url() . '/a-propos#'); ?>">Nos revendeurs</a>
-            <a class="underline" href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>">Qui sommes nous</a>
-            <a class="underline" href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>">Nos engagements</a>
-            <a class="underline" href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>">Notre terriroire</a>
+            <a class="underline" href="<?php echo esc_url(get_home_url() . '/a-propos#nos-revendeurs'); ?>">Nos revendeurs</a>
+            <a class="underline" href="<?php echo esc_url(get_home_url() . '/a-propos#qui-sommes-nous'); ?>">Qui sommes nous</a>
+            <a class="underline" href="<?php echo esc_url(get_home_url() . '/a-propos#engagements'); ?>">Nos engagements</a>
+            <a class="underline" href="<?php echo esc_url(get_home_url() . '/a-propos#territoire'); ?>">Notre terriroire</a>
         </nav>
 
     </header>

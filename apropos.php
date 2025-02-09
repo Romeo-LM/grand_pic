@@ -29,7 +29,7 @@ get_header();
     </div>
     <div class="quisommesnous1">
 
-        <div class="quisommesnous2">
+        <div class="quisommesnous2" id="qui-sommes-nous">
             <div>
                 <h1>
                     QUI SOMMES NOUS ?
@@ -55,13 +55,13 @@ get_header();
                 alt="Logo brasserie mauriennaise du Grand Pic">
 
         </div>
-        <div>
+        <div id="nos-revendeurs">
             <h2>RETROUVEZ NOS BIÈRES PRÈS DE CHEZ VOUS</h2>
             <iframe src="https://www.google.com/maps/d/embed?mid=1OX1FAHB32SW8tBNiQPi-irvyBLWnUASP" width="100%"
                 height="600"></iframe>
         </div>
     </div>
-    <div class="nosengagements">
+    <div class="nosengagements" id="engagements">
         <div class="noirfondenga">
             <div class="numenga">
                 <h2>
@@ -220,7 +220,7 @@ get_header();
 
 
     </div>
-    <div class="territoire">
+    <div class="territoire" id="territoire">
         <div class="noirfondenga">
             <div class="titreterritoire">
                 <h3>LE MASSIF DE LA LAUZIÈRE</h3>
