@@ -25,6 +25,8 @@ main.pro {
     }
 
     div.row {
+        width: fill-available;
+        width: -moz-available;
         width: -webkit-fill-available;
         min-height: 100vh;
         position: relative;

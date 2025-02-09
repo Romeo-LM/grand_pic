@@ -1,9 +1,7 @@
 body>div.title {
-    width: -moz-available;
-    /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available;
-    /* Mozilla-based browsers will ignore this. */
     width: fill-available;
+    width: -moz-available;
+    width: -webkit-fill-available;
     margin: auto 0;
     position: fixed;
     z-index: -1;
@@ -49,6 +47,8 @@ main.home {
         width: 100vw;
 
         img {
+            width: fill-available;
+            width: -moz-available;
             width: -webkit-fill-available;
         }
     }
@@ -83,7 +83,9 @@ main.home {
             overflow: hidden;
             position: relative;
             width: 100vw;
-            height: -webkit-fill-available;
+            width: fill-available;
+            width: -moz-available;
+            width: -webkit-fill-available;
             background-color: var(--primary);
             padding: 32px 0;
             flex-direction: column-reverse;
@@ -116,6 +118,7 @@ main.home {
                     position: relative;
 
                     p.beer {
+                        text-stroke: 4px var(--secondary);
                         -webkit-text-stroke: 4px var(--secondary);
                     }
 
@@ -229,6 +232,8 @@ main.home {
     }
 
     section.gammes {
+        width: fill-available;
+        width: -moz-available;
         width: -webkit-fill-available;
         height: 240px;
         background-color: #fff;
@@ -338,6 +343,8 @@ main.home {
     }
 
     section.engagement {
+        width: fill-available;
+        width: -moz-available;
         width: -webkit-fill-available;
         display: flex;
         flex-direction: column;
@@ -512,7 +519,7 @@ main.home {
 }
 
 @media (max-width: 800px) {
-    
+
     body>div.title {
         top: 400px;
 
@@ -597,6 +604,8 @@ main.home {
         }
 
         section.engagement {
+            width: fill-available;
+            width: -moz-available;
             width: -webkit-fill-available;
             display: flex;
             flex-direction: column;

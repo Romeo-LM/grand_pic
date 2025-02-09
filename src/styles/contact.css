@@ -29,7 +29,11 @@ main.contact {
     }
 
     div.content {
+        width: fill-available;
+        width: -moz-available;
         width: -webkit-fill-available;
+        height: fill-available;
+        height: -moz-available;
         height: -webkit-fill-available;
         position: relative;
         display: flex;
@@ -233,6 +237,8 @@ main.contact {
                                 width: 144px;
 
                                 input {
+                                    width: fill-available;
+                                    width: -moz-available;
                                     width: -webkit-fill-available;
                                 }
                             }
@@ -258,6 +264,8 @@ main.contact {
                                 font-size: 10px;
                                 line-height: 12px;
                                 padding-left: 8px;
+                                width: fill-available;
+                                width: -moz-available;
                                 width: -webkit-fill-available;
                             }
 

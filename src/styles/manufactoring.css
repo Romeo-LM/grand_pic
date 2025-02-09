@@ -33,6 +33,8 @@ main.manufacturing {
     }
 
     div.row {
+        width: fill-available;
+        width: -moz-available;
         width: -webkit-fill-available;
         height: 650vh;
         position: relative;
@@ -66,6 +68,8 @@ main.manufacturing {
                 gap: 24px;
 
                 div.title {
+                    width: fill-available;
+                    width: -moz-available;
                     width: -webkit-fill-available;
 
                     h3 {
@@ -151,6 +155,8 @@ main.manufacturing {
                     gap: 12px;
 
                     div.title {
+                        width: fill-available;
+                        width: -moz-available;
                         width: -webkit-fill-available;
 
                         h3 {
