@@ -396,9 +396,13 @@ main.apropos {
                 }
             }
 
+            div.noirfondenga>div.contenuenga {
+                flex-direction: column-reverse;
+            }
+
             div>div.contenuenga {
                 display: flex;
-                flex-direction: column-reverse;
+                flex-direction: column;
                 gap: 16px;
 
                 div.textenga {
