@@ -426,6 +426,7 @@ main.newBiere {
                         position: static;
                         width: 100vw;
                         height: fit-content;
+                        object-fit: contain;
                     }
                 }
 

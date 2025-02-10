@@ -284,6 +284,7 @@ main.apropos {
             .capsule {
                 width: 80%;
                 height: fit-content;
+                object-fit: contain;
             }
 
             .capsule.noire {
@@ -357,6 +358,7 @@ main.apropos {
                 >img {
                     width: 80%;
                     height: fit-content;
+                    object-fit: contain;
                 }
             }
         }
@@ -420,6 +422,7 @@ main.apropos {
                     img {
                         width: 100%;
                         height: fit-content;
+                        object-fit: contain;
                     }
                 }
             }
@@ -445,6 +448,7 @@ main.apropos {
                     img {
                         width: 100%;
                         height: fit-content;
+                        object-fit: contain;
                     }
                 }
             }
@@ -481,6 +485,7 @@ main.apropos {
                     img {
                         width: 100%;
                         height: fit-content;
+                        object-fit: contain;
                     }
                 }
 

@@ -67,6 +67,7 @@ main.home {
             z-index: 3;
             height: 80vh;
             width: fit-content;
+            object-fit: contain;
         }
 
         div.nb1,
@@ -83,9 +84,6 @@ main.home {
             overflow: hidden;
             position: relative;
             width: 100vw;
-            width: fill-available;
-            width: -moz-available;
-            width: -webkit-fill-available;
             background-color: var(--primary);
             padding: 32px 0;
             flex-direction: column-reverse;
@@ -498,6 +496,7 @@ main.home {
 
         .carousel-cell {
             width: fit-content;
+            object-fit: contain;
             height: 400px;
             margin-right: 40px;
             border-radius: 5px;

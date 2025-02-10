@@ -203,13 +203,14 @@ main.homeBiere {
             gap: 32px;
 
             a {
-
                 width: 320px;
                 height: 476px;
 
                 img.beer {
                     top: 32px;
                     height: 320px;
+                    width: fit-content;
+                    object-fit: contain;
                 }
 
                 svg.gouteG {
