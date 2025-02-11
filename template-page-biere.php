@@ -14,7 +14,8 @@ $temp = "";
 $barique = "";
 $perso = "";
 
-function custom_menu_order_filter($where) {
+function custom_menu_order_filter($where)
+{
     global $wpdb, $all, $gamme, $temp, $barique, $perso;
 
     if (isset($_GET['f'])) {
@@ -28,10 +29,10 @@ function custom_menu_order_filter($where) {
         } elseif ($_GET['f'] == 'barique') {
             $where .= " AND {$wpdb->posts}.menu_order >= 500 AND {$wpdb->posts}.menu_order <= 750";
             $barique = "selected";
-        } elseif ($_GET['f'] == 'perso') {
+        }/*  elseif ($_GET['f'] == 'perso') {
             $where .= " AND {$wpdb->posts}.menu_order >= 750 AND {$wpdb->posts}.menu_order <= 1000";
             $perso = "selected";
-        }
+        } */
     }
 
     return $where;
@@ -56,21 +57,63 @@ remove_filter('posts_where', 'custom_menu_order_filter');
         <a href="<?php echo esc_url(get_home_url() . '/nos-bieres'); ?>" class="<?= $all ?>"> toutes NOS BIÈRES</a>
         <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=gamme'); ?>" class="<?= $gamme ?>"> bières de gamme</a>
         <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=temp'); ?>" class="<?= $temp ?>">bières éphémères</a>
-        <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=barique'); ?>"class="<?= $barique ?>">bière en barrique</a>
+        <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=barique'); ?>" class="<?= $barique ?>">bière en barrique</a>
         <a href="<?php echo esc_url(get_home_url() . '/nos-bieres?f=perso'); ?>" class="<?= $perso ?>">créez vos bières</a>
     </section>
 
     <section class="beers">
         <?php
-        // Vérifiez si des pages enfants existent
-        if ($child_pages_query->have_posts()) {
+        if ($_GET['f'] == 'perso') {
+        ?>
+            <div class="row">
+                <div class="card" style="--primary: #42603C;  --secondary: #A6CEA4">
+
+                    <svg class="gouteG" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.94 58.17">
+                        <g id="Calque_1-2" data-name="Calque 1">
+                            <path d="M41.56.62S-3,4.4.16,21.17c.45,2.37,2.16,4.26,4.49,4.89,2.9.78,7.44.53,12.74-4.98C26.6,11.51,26.42,8.94,41.56.62Z" />
+                            <path d="M47.14,0s-20.45,9.74-28.24,29.84,1.86,28.51,7.7,28.33,16.73-2.83,12.57-26.83S47.14,0,47.14,0Z" />
+                            <path d="M50.77.62s-5.45,29.66,1.6,40.94c3.79,6.07,13.22,3.83,13.56-3.32.1-2.03-.37-4.56-1.78-7.69-5.49-12.13-8.41-7.7-13.37-29.93Z" />
+                        </g>
+                    </svg>
+
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/biere_perso.png'); ?>" alt="mockup biere personalisée" class="beer">
+
+                    <svg class="gouteD" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.94 58.17">
+                        <g id="Calque_1-2" data-name="Calque 1">
+                            <path d="M41.56.62S-3,4.4.16,21.17c.45,2.37,2.16,4.26,4.49,4.89,2.9.78,7.44.53,12.74-4.98C26.6,11.51,26.42,8.94,41.56.62Z" />
+                            <path d="M47.14,0s-20.45,9.74-28.24,29.84,1.86,28.51,7.7,28.33,16.73-2.83,12.57-26.83S47.14,0,47.14,0Z" />
+                            <path d="M50.77.62s-5.45,29.66,1.6,40.94c3.79,6.07,13.22,3.83,13.56-3.32.1-2.03-.37-4.56-1.78-7.69-5.49-12.13-8.41-7.7-13.37-29.93Z" />
+                        </g>
+                    </svg>
+
+                    <div class="name">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/src/medias/shadow.png'); ?>" alt="" class="shadow">
+                        <h2>VOTRE BIÈRE</h2>
+                        <h3>À VOS COULEUR</h3>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <h2>créer votre bière personnalisée</h2>
+
+                    <p>Découvrez l'art de la personnalisation de votre bière avec notre brasserie artisanale en Savoie. Que vous soyez un passionné de saveurs uniques ou que vous souhaitiez offrir un cadeau original, nous vous offrons la possibilité de créer une bière sur mesure. Choisissez votre style, vos arômes, et même l'étiquette qui correspond à votre personnalité. Laissez-nous révéler le meilleur de la Savoie dans chaque gorgée, et faites de chaque occasion un moment unique avec une bière qui vous ressemble !</p>
+
+                    <a href="<?php echo esc_url(get_home_url() . '/a-propos'); ?>" class="buttonN">
+                        <div class="ellipse"></div>
+                        <p>NOUS CONTACTER</p>
+                    </a>
+
+                </div>
+            </div>
+            <?php
+        } elseif ($child_pages_query->have_posts()) {
 
             while ($child_pages_query->have_posts()) {
                 $child_pages_query->the_post();
 
                 $primary = get_field('p_beer_color');
                 $secondary = get_field('s_beer_color');
-        ?>
+            ?>
 
                 <a href="<?php the_permalink(); ?>" class="card" style="--primary: <?= esc_attr($primary); ?>;  --secondary: <?= esc_attr($secondary); ?>">
 

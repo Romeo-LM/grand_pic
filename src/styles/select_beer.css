@@ -5,6 +5,7 @@ main.homeBiere {
     gap: 64px;
     padding: 64px 0;
     min-height: calc(100vh - 107px);
+    overflow: hidden;
 
     section.filter {
         display: flex;
@@ -55,12 +56,24 @@ main.homeBiere {
     }
 
     section.beers {
+        width: 100vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 32px;
 
-        a {
+        div.row {
+            width: fill-available;
+            width: -moz-available;
+            width: -webkit-fill-available;
+            padding: 0 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        > a,
+        div.card {
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
@@ -147,7 +160,8 @@ main.homeBiere {
             }
         }
 
-        a:hover {
+        > a:hover,
+        div.card:hover {
 
             img.beer {
                 transform: scale(0.8);
@@ -176,6 +190,27 @@ main.homeBiere {
                 }
             }
         }
+
+        div.text {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            h2 {
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            p {
+                max-width: 600px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
     }
 }
 
@@ -202,7 +237,12 @@ main.homeBiere {
         section.beers {
             gap: 32px;
 
-            a {
+            div.row {
+                width: 100vw;
+            }
+
+            a,
+            row>div.card {
                 width: 320px;
                 height: 476px;
 
@@ -249,7 +289,8 @@ main.homeBiere {
                 }
             }
 
-            a:hover {
+            a:hover,
+            row>div.card:hover {
 
                 img.beer {
                     transform: scale(0.8);
