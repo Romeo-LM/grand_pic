@@ -238,11 +238,12 @@ main.homeBiere {
             gap: 32px;
 
             div.row {
-                width: 100vw;
+                flex-direction: column;
+                gap: 32px;
             }
 
-            a,
-            row>div.card {
+            > a,
+            div.row > div.card {
                 width: 320px;
                 height: 476px;
 
@@ -289,7 +290,7 @@ main.homeBiere {
                 }
             }
 
-            a:hover,
+            > a:hover,
             row>div.card:hover {
 
                 img.beer {
@@ -315,6 +316,24 @@ main.homeBiere {
                         font-size: 32px;
                         line-height: 38px;
                     }
+                }
+            }
+
+            div.text {
+                width: 90vw;;
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+    
+                h2 {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+    
+                p {
+                    max-width: 600px;
+                    font-size: 12px;
+                    line-height: 16px;
                 }
             }
         }
